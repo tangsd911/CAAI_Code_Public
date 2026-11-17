@@ -56,7 +56,49 @@ numeric experiments were rerun.
 | Nonzero constant reference | `e22_nonzero_constant_reference.*` | Humanoid affine-bias check with \(x_r\neq0\): compares pure LQR and the nominal bias \(p=B^\dagger((I-A)x_r-E\bar d)\). |
 | Initial-gain transition | `e23_initial_gain_transition.*`, `sim_initial_gain_transition.pdf` | Deliberately non-stabilizing humanoid initial policy, scaling/SDPI stabilization trace, and error trajectory after the switch. |
 
-## 4. Implementation notes
+## 4. Results
+
+Every figure and number below is produced by `run_complete_suite.py`; nothing is hand-entered.
+The committed `output/` tree (230 files) was regenerated from scratch on a clean copy: 192 files
+reproduce byte-identically, and the remaining 38 differ only in run timestamps, wall-clock fields
+and last-digit floating-point noise (largest relative deviation 3.4e-8, most differences
+1e-12 to 1e-16). Figure canvases differ by 1-2 px, which is tight-bbox rounding under a
+different Matplotlib build.
+
+### 4.1 Humanoid MIMO benchmark
+
+| Model-based, full state | Unknown-history output feedback |
+|---|---|
+| <img src="output/figures/sim_humanoid_mimo.png" width="430"> | <img src="output/figures/sim_humanoid_mimo_ofb.png" width="430"> |
+| DRC (solid) vs LQR (dashed) on three joints; 20-seed steady-state error `0.045` vs `0.291` rad | Same benchmark through a Kalman observer with `u = K xhat + p`; 20-seed MAE `0.121` vs `0.315` rad |
+
+### 4.2 Microgrid MIMO benchmark
+
+| Model-based, full state | Unknown-history output feedback |
+|---|---|
+| <img src="output/figures/sim_microgrid_mimo.png" width="430"> | <img src="output/figures/sim_microgrid_mimo_ofb.png" width="430"> |
+| Two-area frequency deviation and governor control; 20-seed discounted cost | Same benchmark with the observer; 20-seed cost and frequency MAE |
+
+### 4.3 Paper values against measured values (`output/tables/e1_main.md`)
+
+| Metric | measured mean | measured std | paper value | deviation (paper-measured) |
+|---|---|---|---|---|
+| Humanoid MAE (rad), DRC | 0.0455 | 0.0009 | 0.0455±0.0009 | +0.0000 |
+| Humanoid MAE (rad), LQR | 0.2910 | 0.0010 | 0.291±0.001 | +0.0000 |
+| Humanoid DRC advantage (%) | 84.4 | — | 84.4 | +0.0 |
+| Microgrid discounted cost, DRC | 0.489 | 0.005 | 0.489±0.005 | +0.000 |
+| Microgrid discounted cost, LQR | 0.745 | 0.009 | 0.745±0.009 | -0.000 |
+| Microgrid freq MAE, DRC | 0.0028 | 0.0000 | 0.0028±0.00003 | -0.0000 |
+| Microgrid freq MAE, LQR | 0.0049 | 0.0000 | 0.0049±0.00003 | -0.0000 |
+| Microgrid cost advantage (%) | 34.5 | — | 34.5 | +0.0 |
+
+### 4.4 Non-zero constant reference (`output/tables/e22_nonzero_constant_reference.md`)
+
+`x_r = [0.2, 0, 0.3, 0, 0.2, 0]` on the humanoid. Pure LQR keeps a steady-state offset of
+`0.2877`; the nominal affine bias `p = B^dagger((I-A)x_r - E dbar)` drives the deterministic
+offset to `1.07e-11` while the stochastic MAE drops to `0.0390`.
+
+## 5. Implementation notes
 
 - The affine DRC fixed point is solved by `drc_core.py`. The general-`g`
   objective and its mean-reduction identity are checked in `theory_tests.py`.
@@ -73,7 +115,7 @@ numeric experiments were rerun.
 - The nonlinear and tail tables are reduced stress tests, not high-fidelity
   hardware simulators.
 
-## 5. Key honest limitations
+## 6. Key honest limitations
 
 1. Unknown-disturbance-history output feedback is stable and is benchmarked,
    but it does **not** reproduce the full-state humanoid performance. The
@@ -92,7 +134,7 @@ numeric experiments were rerun.
    experiments; the paper claim is the local fixed-policy `O_p(N^-1/2)` rate,
    not global outer-loop convergence.
 
-## 6. Verification
+## 7. Verification
 
 ```bash
 python3 theory_tests.py
