@@ -1,0 +1,84 @@
+Hard-coded result-literal scan
+========================================
+Python files scanned: 18
+
+A. Suspected result literals in print/bar/text/plot: 0
+  (none)
+
+B. Layout / formatting constants (allowed): 14
+  figures.py:82  13.5
+  figures.py:82  10.0
+  figures.py:92  -0.02
+  figures.py:92  0.33
+  figures.py:126  0.98
+  figures.py:165  13.5
+  figures.py:165  10.0
+  figures.py:233  0.98
+  figures_ofb.py:59  13.5
+  figures_ofb.py:59  10.0
+  figures_ofb.py:91  0.98
+  figures_ofb.py:109  13.5
+  figures_ofb.py:109  10.0
+  figures_ofb.py:155  0.98
+
+C. models.py constants (model parameters + paper comparison values; never fed to a simulation):
+  models.py:32  J = [0.5, 0.3, 0.2], B(damping) = [0.8, 0.5, 0.3], Ts = 0.01.
+  models.py:36  J = np.array([0.5, 0.3, 0.2])
+  models.py:37  Bp = np.array([0.8, 0.5, 0.3])
+  models.py:38  Ts = 0.01
+  models.py:44  Ac[idx, idx + 1] = 1.0
+  models.py:46  Bc[idx + 1, i] = 1.0 / J[i]
+  models.py:47  Ec[idx + 1, i] = 1.0 / J[i]
+  models.py:57  H = np.array([5.0, 4.0])
+  models.py:58  D = np.array([0.8, 0.6])
+  models.py:59  Tg = np.array([0.5, 0.4])
+  models.py:60  T12 = 0.2
+  models.py:61  Ts = 0.1
+  models.py:63  [-(D[0] + T12) / (2 * H[0]), 1 / (2 * H[0]), +T12 / (2 * H[0]), 0.0],
+  models.py:64  [-1 / Tg[0], -1 / Tg[0], 0.0, 0.0],
+  models.py:65  [+T12 / (2 * H[1]), 0.0, -(D[1] + T12) / (2 * H[1]), 1 / (2 * H[1])],
+  models.py:66  [0.0, 0.0, -1 / Tg[1], -1 / Tg[1]]])
+  models.py:67  Bc = np.array([[0.0, 0.0], [1 / Tg[0], 0.0],
+  models.py:68  [0.0, 0.0], [0.0, 1 / Tg[1]]])
+  models.py:70  [-1 / (2 * H[0]), 0.0, +1 / (2 * H[0]), 0.0],
+  models.py:71  [0.0, 0.0, 0.0, 0.0],
+  models.py:72  [0.0, -1 / (2 * H[1]), 0.0, +1 / (2 * H[1])],
+  models.py:73  [0.0, 0.0, 0.0, 0.0]])
+  models.py:81  H = [5.0, 4.0], D = [0.8, 0.6], Tg = [0.5, 0.4], T12 = 0.2, Ts = 0.1.
+  models.py:82  Forward-Euler discretization (unchanged method, Ts = 0.1).
+  models.py:102  R=np.diag([0.05, 0.05, 0.05]).astype(float),
+  models.py:103  d_bar=np.array([5.0, 3.0, 2.0]),
+  models.py:104  d_std=np.array([1.0, 0.6, 0.4]),
+  models.py:106  alpha=0.95, lam=5.0,
+  models.py:110  x0=np.array([0.30, 0, 0.30, 0, 0.30, 0]),
+  models.py:120  R=np.diag([0.1, 0.1]).astype(float),
+  models.py:121  d_bar=np.array([0.15, 0.10, 0.20, 0.15]),
+  models.py:122  d_std=np.sqrt(np.array([0.005, 0.003, 0.010, 0.006])),
+  models.py:124  alpha=0.95, lam=5.0,
+  models.py:128  x0=np.array([0.1, 0, 0.1, 0]),
+  models.py:142  drc_mae=(0.0455, 0.0009), lqr_mae=(0.291, 0.001), advantage=84.4,
+  models.py:144  shifts=[(0.0, 0.2910, 0.0455, 84.4),
+  models.py:145  (0.5, 0.4338, 0.1689, 61.1),
+  models.py:146  (1.0, 0.5772, 0.3094, 46.4),
+  models.py:147  (2.0, 0.8644, 0.5939, 31.3),
+  models.py:148  (3.0, 1.1519, 0.8794, 23.7)],
+  models.py:150  iters=420, lam_min_P=31.78, rho_G=0.985, p_star=[-4.53, -2.86, -1.96],
+  models.py:154  lqr_pure=(0.291, 0.745, 0.0049),
+  models.py:155  affine_lqr=(0.039, 0.745, 0.0049),
+  models.py:156  drc_no_bias=(0.289, 0.591, 0.0036),
+  models.py:157  drc_affine=(0.0455, 0.489, 0.0028),
+  models.py:160  lambda_humanoid={5: (0.0455, 41.16), 10: (0.0462, 41.38),
+  models.py:161  20: (0.0465, 41.50)},
+  models.py:164  drc_cost=(0.489, 0.005), lqr_cost=(0.745, 0.009),
+  models.py:165  drc_mae=(0.0028, 0.00003), lqr_mae=(0.0049, 0.00003),
+  models.py:166  cost_advantage=34.5,
+  models.py:168  nom_cost=(0.489, 0.745), shf_cost=(0.914, 1.606),
+  models.py:169  deg_cost=(87.1, 115.4),
+  models.py:170  nom_mae=(0.0028, 0.0049), shf_mae=(0.0035, 0.0073),
+  models.py:171  iters=76, lam_min_P=1.756, rho_G=0.802, p_star=[-0.345, -0.362],
+  models.py:172  lambda_micro={5: (0.0028, 0.489), 10: (0.0027, 0.403),
+  models.py:173  20: (0.0028, 0.394)},
+  models.py:175  mean_only_cost=(0.581, 1.320),  # DRC, LQR
+
+Result-literal count (section A): 0
+Layout-constant count (section B): 14

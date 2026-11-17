@@ -1,0 +1,66 @@
+{
+  "initial_rho": 1.0608573719204855,
+  "scaled_initializer_rho": 0.9979393369160344,
+  "final_rho": 0.9853625286681003,
+  "phase1_steps": 1,
+  "stop_reason": "stationarity",
+  "switch_step": 20,
+  "peak_error_norm": 1.612716759769459,
+  "final_error_norm": 0.028904628292866476,
+  "stages": [
+    {
+      "stage": 0,
+      "phase": "initial",
+      "rho_G": 1.0608573719204855,
+      "beta_scale": 1.0
+    },
+    {
+      "stage": 1,
+      "phase": "scaled initializer",
+      "rho_G": 0.9979393369160344,
+      "beta_scale": 0.848370406636961
+    },
+    {
+      "stage": 2,
+      "phase": "I",
+      "rho_G": 0.9979393369160344,
+      "beta_scale": 0.848370406636961
+    },
+    {
+      "stage": 3,
+      "phase": "II",
+      "rho_G": 0.9805447142114145,
+      "beta_scale": 0.848370406636961
+    },
+    {
+      "stage": 4,
+      "phase": "II",
+      "rho_G": 0.9850664356556176,
+      "beta_scale": 0.848370406636961
+    },
+    {
+      "stage": 5,
+      "phase": "II",
+      "rho_G": 0.9853557986318968,
+      "beta_scale": 0.848370406636961
+    },
+    {
+      "stage": 6,
+      "phase": "II",
+      "rho_G": 0.9853625270537794,
+      "beta_scale": 0.848370406636961
+    },
+    {
+      "stage": 7,
+      "phase": "II",
+      "rho_G": 0.9853625286681003,
+      "beta_scale": 0.848370406636961
+    },
+    {
+      "stage": 8,
+      "phase": "II",
+      "rho_G": 0.9853625286681003,
+      "beta_scale": 0.848370406636961
+    }
+  ]
+}

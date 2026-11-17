@@ -1,0 +1,58 @@
+[humanoid] nominal DRC cost=41.16153 mae=0.04548; common-adversary DRC={'mae': 0.024529003786983385, 'cost': 41.17824203019609, 'u_energy': 38.771553923068744, 'diverged': None}
+[humanoid] nominal LQR cost=370.76266 mae=0.29097; common-adversary LQR={'mae': 0.29336577039286416, 'cost': 383.7507105443666, 'u_energy': 39.496809591572216, 'diverged': None} (not LQR-specific worst case)
+[microgrid] nominal DRC cost=0.48852 mae=0.00281; common-adversary DRC={'mae': 0.0007954754658397233, 'cost': 0.3690468504822405, 'u_energy': 0.016017208406878987, 'diverged': None}
+[microgrid] nominal LQR cost=0.74544 mae=0.00494; common-adversary LQR={'mae': None, 'cost': None, 'u_energy': None, 'diverged': 'diverged at t=157, max|x|=1.078e+05'} (not LQR-specific worst case)
+humanoid:
+  nominal:
+    drc:
+      mae: 0.04548246375667183
+      mae_std: 0.0008938715612284911
+      cost: 41.1615348198844
+      cost_std: 0.47729389002929073
+    lqr:
+      mae: 0.29096986732346564
+      mae_std: 0.0009980492072617772
+      cost: 370.7626604931721
+      cost_std: 2.565952514157647
+  common_adversary:
+    drc:
+      mae: 0.024529003786983385
+      cost: 41.17824203019609
+      u_energy: 38.771553923068744
+      diverged: None
+    lqr:
+      mae: 0.29336577039286416
+      cost: 383.7507105443666
+      u_energy: 39.496809591572216
+      diverged: None
+  scope:
+    common_affine_adversary: True
+    lqr_adversary_is_lqr_worst_case: False
+    wasserstein_ball_membership_checked: False
+microgrid:
+  nominal:
+    drc:
+      mae: 0.0028104163272232173
+      mae_std: 2.643709290921343e-05
+      cost: 0.488516526767659
+      cost_std: 0.0051412087500479
+    lqr:
+      mae: 0.00493899996408309
+      mae_std: 2.9712899198349335e-05
+      cost: 0.7454396376891662
+      cost_std: 0.008580500571020055
+  common_adversary:
+    drc:
+      mae: 0.0007954754658397233
+      cost: 0.3690468504822405
+      u_energy: 0.016017208406878987
+      diverged: None
+    lqr:
+      mae: None
+      cost: None
+      u_energy: None
+      diverged: diverged at t=157, max|x|=1.078e+05
+  scope:
+    common_affine_adversary: True
+    lqr_adversary_is_lqr_worst_case: False
+    wasserstein_ball_membership_checked: False

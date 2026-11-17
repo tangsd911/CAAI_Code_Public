@@ -1,0 +1,30 @@
+{
+  "suite": "CAAI complete simulation audit",
+  "quick": true,
+  "started_at": "2026-11-17 14:41:35",
+  "steps": {
+    "theory_tests": {
+      "status": "ok",
+      "wall_seconds": 3.1123759746551514,
+      "stdout_tail": "line: error=2.598e-13\n  [OK] SDPI z vs baseline: error=2.074e-15\n  [OK] SDPI P vs baseline: error=2.521e-11\n  initialization=provided_stable, stop=stationarity, final deltas={'K': 3.6686210394357355e-12, 'p': 1.0777694084219737e-13, 'N': 5.721642717357991e-13, 'z': 1.4632072410009546e-14}\nT2 SDPI degenerate at baseline policy: humanoid\n  [OK] degenerate K: error=5.400e-14\n  [OK] degenerate p: error=0.000e+00\n  [OK] degenerate P: error=4.775e-12\nT2 SDPI degenerate at baseline policy: microgrid\n  [OK] degenerate K: error=3.759e-12\n  [OK] degenerate p: error=1.554e-14\n  [OK] degenerate P: error=1.634e-10\nT2 SDPI arbitrary initial policy: humanoid\n  initial rho=2.0277, source=scaled_candidate_verified_on_original, final rho=0.98536\nT2 SDPI arbitrary initial policy: microgrid\n  initial rho=5.2837, source=scaled_candidate_verified_on_original, final rho=0.80212\nT3 identification rank/PE: humanoid\n  rank [X;E_e]=9/9, lambda_min Phi=3.51e-06\nT3 identification rank/PE: microgrid\n  rank [X;E_e]=6/6, lambda_min Phi=2.44e-06\nT4 Thm.3 X criterion: humanoid\n  stable rho=0.9854: construction+SDP feasible; destabilized rho=1.0200: Lyapunov SDP SCS-marginal\nT4 Thm.3 X criterion: microgrid\n  stable rho=0.8021: construction+SDP feasible; destabilized rho=1.0200: Lyapunov SDP SCS-marginal\nT6 atomwise W2 and separate adversaries: humanoid\n  [OK] drc atomwise W2 formula: error=0.000e+00\n  [OK] lqr atomwise W2 formula: error=0.000e+00\n  [OK] LQR own-adversary FOC: error=1.042e-14\n  atom identities exact; LQR FOC residual=1.042e-14; DRC and LQR adversaries distinct\nT6 atomwise W2 and separate adversaries: microgrid\n  [OK] drc atomwise W2 formula: error=0.000e+00\n  [OK] lqr atomwise W2 formula: error=0.000e+00\n  [OK] LQR own-adversary FOC: error=7.944e-15\n  atom identities exact; LQR FOC residual=7.944e-15; DRC and LQR adversaries distinct\nT5 truth-usage audit\n  truth A/B/E referenced only in: ['collect_closed_loop', 'identification_errors', 'full_identification_errors']\n\nALL TESTS PASSED\n\n",
+      "result": {}
+    },
+    "algorithm4_tests": {
+      "status": "ok",
+      "wall_seconds": 4.5911359786987305,
+      "stdout_tail": "[OK] exact IV humanoid: {'A': 1.1816729718833035e-13, 'B': 2.895705151589442e-16, 'E': 2.011332737713306e-14, 'N': 1.2196539061004796e-12, 'z': 2.9790409838967277e-15}\n[OK] no-probe negative result humanoid: not_identifiable\n[OK] scaling map humanoid: rho=0.999840, source=scaled_candidate_verified_on_original\n[OK] Schur boundary stop humanoid: schur_complement_boundary\n[OK] Algorithm 4 smoke humanoid: rho=0.985381\n[OK] exact IV microgrid: {'A': 2.57718256201479e-13, 'B': 4.005917009887506e-16, 'E': 2.6847568203386302e-14, 'N': 4.386697548551888e-14, 'z': 2.33150965428689e-16}\n[OK] no-probe negative result microgrid: not_identifiable\n[OK] scaling map microgrid: rho=0.982146, source=scaled_candidate_verified_on_original\n[OK] Schur boundary stop microgrid: schur_complement_boundary\n[OK] Algorithm 4 smoke microgrid: rho=0.801182\nALL ALGORITHM-4 TESTS PASSED\n\n",
+      "result": {}
+    },
+    "hardcode_scan": {
+      "status": "ok",
+      "wall_seconds": 0.020914077758789062,
+      "stdout_tail": "rward-Euler discretization (unchanged method, Ts = 0.1).\n  models.py:102  R=np.diag([0.05, 0.05, 0.05]).astype(float),\n  models.py:103  d_bar=np.array([5.0, 3.0, 2.0]),\n  models.py:104  d_std=np.array([1.0, 0.6, 0.4]),\n  models.py:106  alpha=0.95, lam=5.0,\n  models.py:110  x0=np.array([0.30, 0, 0.30, 0, 0.30, 0]),\n  models.py:120  R=np.diag([0.1, 0.1]).astype(float),\n  models.py:121  d_bar=np.array([0.15, 0.10, 0.20, 0.15]),\n  models.py:122  d_std=np.sqrt(np.array([0.005, 0.003, 0.010, 0.006])),\n  models.py:124  alpha=0.95, lam=5.0,\n  models.py:128  x0=np.array([0.1, 0, 0.1, 0]),\n  models.py:142  drc_mae=(0.0455, 0.0009), lqr_mae=(0.291, 0.001), advantage=84.4,\n  models.py:144  shifts=[(0.0, 0.2910, 0.0455, 84.4),\n  models.py:145  (0.5, 0.4338, 0.1689, 61.1),\n  models.py:146  (1.0, 0.5772, 0.3094, 46.4),\n  models.py:147  (2.0, 0.8644, 0.5939, 31.3),\n  models.py:148  (3.0, 1.1519, 0.8794, 23.7)],\n  models.py:150  iters=420, lam_min_P=31.78, rho_G=0.985, p_star=[-4.53, -2.86, -1.96],\n  models.py:154  lqr_pure=(0.291, 0.745, 0.0049),\n  models.py:155  affine_lqr=(0.039, 0.745, 0.0049),\n  models.py:156  drc_no_bias=(0.289, 0.591, 0.0036),\n  models.py:157  drc_affine=(0.0455, 0.489, 0.0028),\n  models.py:160  lambda_humanoid={5: (0.0455, 41.16), 10: (0.0462, 41.38),\n  models.py:161  20: (0.0465, 41.50)},\n  models.py:164  drc_cost=(0.489, 0.005), lqr_cost=(0.745, 0.009),\n  models.py:165  drc_mae=(0.0028, 0.00003), lqr_mae=(0.0049, 0.00003),\n  models.py:166  cost_advantage=34.5,\n  models.py:168  nom_cost=(0.489, 0.745), shf_cost=(0.914, 1.606),\n  models.py:169  deg_cost=(87.1, 115.4),\n  models.py:170  nom_mae=(0.0028, 0.0049), shf_mae=(0.0035, 0.0073),\n  models.py:171  iters=76, lam_min_P=1.756, rho_G=0.802, p_star=[-0.345, -0.362],\n  models.py:172  lambda_micro={5: (0.0028, 0.489), 10: (0.0027, 0.403),\n  models.py:173  20: (0.0028, 0.394)},\n  models.py:175  mean_only_cost=(0.581, 1.320),  # DRC, LQR\n\nResult-literal count (section A): 0\nLayout-constant count (section B): 16\n",
+      "result": {
+        "rows": 2
+      }
+    }
+  },
+  "wall_seconds": 7.727318048477173,
+  "finished_at": "2026-11-17 14:41:42",
+  "all_ok": true
+}

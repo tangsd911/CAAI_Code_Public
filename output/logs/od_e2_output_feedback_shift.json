@@ -1,0 +1,230 @@
+{
+  "humanoid": {
+    "0.0": {
+      "drc": {
+        "mae_mean": 0.12118862706608387,
+        "mae_std": 0.0065546713128833934,
+        "cost_mean": 58.58133043437584,
+        "cost_std": 2.233365994988492,
+        "recon_rmse_mean": 0.2122357536858464,
+        "recon_rmse_std": 0.012634503407699027,
+        "recon_max": 0.5816660807640247,
+        "observer_rho": 0.991236374847448,
+        "max_state": 25.18020464434104,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 0.3149704965751147,
+        "mae_std": 0.003509251947255605,
+        "cost_mean": 388.8599612220892,
+        "cost_std": 4.963427393133657,
+        "recon_rmse_mean": 0.2122357536858463,
+        "recon_rmse_std": 0.012634503407698571,
+        "recon_max": 0.5816660807640405,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.93235395253775,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "0.5": {
+      "drc": {
+        "mae_mean": 0.20642151252816246,
+        "mae_std": 0.0046543445124561855,
+        "cost_mean": 211.6984157532217,
+        "cost_std": 3.703944420639137,
+        "recon_rmse_mean": 0.21223575368584618,
+        "recon_rmse_std": 0.012634503407698606,
+        "recon_max": 0.5816660807640198,
+        "observer_rho": 0.991236374847448,
+        "max_state": 25.104903386815646,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 0.4506471852999635,
+        "mae_std": 0.002848906404719339,
+        "cost_mean": 851.0319440235946,
+        "cost_std": 6.887347835667751,
+        "recon_rmse_mean": 0.2122357536858467,
+        "recon_rmse_std": 0.012634503407698498,
+        "recon_max": 0.5816660807640133,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.856668773800717,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "1.0": {
+      "drc": {
+        "mae_mean": 0.3323549053913216,
+        "mae_std": 0.0034255354945646006,
+        "cost_mean": 547.3977133318286,
+        "cost_std": 5.532234380619246,
+        "recon_rmse_mean": 0.21223575368584607,
+        "recon_rmse_std": 0.01263450340769884,
+        "recon_max": 0.5816660807640359,
+        "observer_rho": 0.991236374847448,
+        "max_state": 25.02960212929025,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 0.590109317740751,
+        "mae_std": 0.0024919740592255018,
+        "cost_mean": 1497.792682464097,
+        "cost_std": 8.86253083638913,
+        "recon_rmse_mean": 0.21223575368584577,
+        "recon_rmse_std": 0.012634503407698804,
+        "recon_max": 0.5816660807640249,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.780983595063685,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "2.0": {
+      "drc": {
+        "mae_mean": 0.606634746215368,
+        "mae_std": 0.002474761872450784,
+        "cost_mean": 1766.542945268326,
+        "cost_std": 9.42570105010093,
+        "recon_rmse_mean": 0.21223575368584552,
+        "recon_rmse_std": 0.012634503407699315,
+        "recon_max": 0.5816660807640383,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.87899961423946,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 0.8732689564996065,
+        "mae_std": 0.002140488836849794,
+        "cost_mean": 3345.080426262094,
+        "cost_std": 12.872026636882863,
+        "recon_rmse_mean": 0.21223575368584613,
+        "recon_rmse_std": 0.012634503407700094,
+        "recon_max": 0.58166608076401,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.629613237589613,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "3.0": {
+      "drc": {
+        "mae_mean": 0.8882107274759363,
+        "mae_std": 0.0021352243048363504,
+        "cost_mean": 3716.0170262438683,
+        "cost_std": 13.405319570933987,
+        "recon_rmse_mean": 0.21223575368584569,
+        "recon_rmse_std": 0.012634503407699919,
+        "recon_max": 0.581666080764028,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.72839709918867,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 1.158667438660307,
+        "mae_std": 0.0019772899149479517,
+        "cost_mean": 5930.72319261608,
+        "cost_std": 16.91358809451478,
+        "recon_rmse_mean": 0.21223575368584718,
+        "recon_rmse_std": 0.012634503407699857,
+        "recon_max": 0.5816660807640399,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.478242880115545,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    }
+  },
+  "microgrid": {
+    "nominal": {
+      "drc": {
+        "mae_mean": 0.003175742263309473,
+        "mae_std": 3.617437410795835e-05,
+        "cost_mean": 0.5430266560471538,
+        "cost_std": 0.005514049388924604,
+        "recon_rmse_mean": 0.0018057676386177893,
+        "recon_rmse_std": 1.106186109386403e-05,
+        "recon_max": 0.00632598960054984,
+        "observer_rho": 0.7975232552356171,
+        "max_state": 3.0115579340864596,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 0.0050926591051012274,
+        "mae_std": 8.783085784745125e-05,
+        "cost_mean": 0.7919249884350407,
+        "cost_std": 0.023684402128055136,
+        "recon_rmse_mean": 0.0018057676386177893,
+        "recon_rmse_std": 1.1061861093864025e-05,
+        "recon_max": 0.006325989600549839,
+        "observer_rho": 0.7975232552356171,
+        "max_state": 1.6044977943298182,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "mean_only_x1.5": {
+      "drc": {
+        "mae_mean": 0.0028901198674686776,
+        "mae_std": 2.6298143644875526e-05,
+        "cost_mean": 0.6335367352274075,
+        "cost_std": 0.009016944596109707,
+        "recon_rmse_mean": 0.001805767638617789,
+        "recon_rmse_std": 1.106186109386405e-05,
+        "recon_max": 0.0063259896005498405,
+        "observer_rho": 0.7975232552356171,
+        "max_state": 3.0205813034041538,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 0.006884564165440097,
+        "mae_std": 0.00010213761995825468,
+        "cost_mean": 1.3631860300833194,
+        "cost_std": 0.03493571576403867,
+        "recon_rmse_mean": 0.0018057676386177893,
+        "recon_rmse_std": 1.1061861093863992e-05,
+        "recon_max": 0.006325989600549838,
+        "observer_rho": 0.7975232552356171,
+        "max_state": 1.6135533212019058,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "mean_x1.5_var_x2": {
+      "drc": {
+        "mae_mean": 0.0040859734892382685,
+        "mae_std": 3.6967647279415085e-05,
+        "cost_mean": 1.0200325940564732,
+        "cost_std": 0.014945213120565131,
+        "recon_rmse_mean": 0.0025537401393273605,
+        "recon_rmse_std": 1.564381662004145e-05,
+        "recon_max": 0.00894630354236276,
+        "observer_rho": 0.7975232644359794,
+        "max_state": 3.0209033057553207,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      },
+      "lqr": {
+        "mae_mean": 0.007486199083641809,
+        "mae_std": 0.00012767262188418988,
+        "cost_mean": 1.6979942278042444,
+        "cost_std": 0.050072904085773515,
+        "recon_rmse_mean": 0.0025537401393273605,
+        "recon_rmse_std": 1.564381662004148e-05,
+        "recon_max": 0.008946303542362755,
+        "observer_rho": 0.7975232644359794,
+        "max_state": 1.6314453948117245,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    }
+  }
+}

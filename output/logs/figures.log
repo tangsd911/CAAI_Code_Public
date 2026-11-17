@@ -1,0 +1,14 @@
+humanoid:
+  benchmark: model-based full state
+  drc_mae: 0.04548246375667183
+  lqr_mae: 0.29096986732346564
+microgrid:
+  benchmark: model-based full state
+  drc_cost: 0.488516526767659
+  lqr_cost: 0.7454396376891662
+  drc_mae:
+    [0] 0.0028104163272232173
+    [1] 0.0035157583341207674
+  lqr_mae:
+    [0] 0.00493899996408309
+    [1] 0.007285533111764131

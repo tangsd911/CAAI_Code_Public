@@ -1,0 +1,123 @@
+=== CAAI verified package: one-command reproduction ===
+
+########## e1_main ##########
+
+########## e2_humanoid_shift ##########
+
+########## e3_ablation ##########
+
+########## e4_lambda_sensitivity ##########
+
+########## e5_mean_only_microgrid ##########
+
+########## e6_rank_observability ##########
+
+########## e7_theory_scalars ##########
+
+########## e8_mae_std ##########
+
+########## e9_sdpi ##########
+
+########## e10_alg4 ##########
+
+########## e11_thm3 ##########
+/Users/shengdatang/Desktop/稿件回复/CAAI/CAAI_Revised/CAAI_Code_Verified/thm3.py:120: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(solver=sv)
+
+########## e12_truth_audit ##########
+
+########## e13_microgrid_matrices ##########
+
+########## e14_worstcase_rollout ##########
+
+########## e15_certificates ##########
+Hard-coded result-literal scan
+========================================
+Python files scanned: 12
+
+A. Suspected result literals in print/bar/text/plot: 0
+  (none)
+
+B. Layout / formatting constants (allowed): 8
+  figures.py:82  13.5
+  figures.py:82  10.0
+  figures.py:91  -0.02
+  figures.py:91  0.33
+  figures.py:124  0.98
+  figures.py:162  13.5
+  figures.py:162  10.0
+  figures.py:230  0.98
+
+C. models.py constants (model parameters + paper comparison values; never fed to a simulation):
+  models.py:32  J = [0.5, 0.3, 0.2], B(damping) = [0.8, 0.5, 0.3], Ts = 0.01.
+  models.py:36  J = np.array([0.5, 0.3, 0.2])
+  models.py:37  Bp = np.array([0.8, 0.5, 0.3])
+  models.py:38  Ts = 0.01
+  models.py:44  Ac[idx, idx + 1] = 1.0
+  models.py:46  Bc[idx + 1, i] = 1.0 / J[i]
+  models.py:47  Ec[idx + 1, i] = 1.0 / J[i]
+  models.py:57  H = np.array([5.0, 4.0])
+  models.py:58  D = np.array([0.8, 0.6])
+  models.py:59  Tg = np.array([0.5, 0.4])
+  models.py:60  T12 = 0.2
+  models.py:61  Ts = 0.1
+  models.py:63  [-(D[0] + T12) / (2 * H[0]), 1 / (2 * H[0]), +T12 / (2 * H[0]), 0.0],
+  models.py:64  [-1 / Tg[0], -1 / Tg[0], 0.0, 0.0],
+  models.py:65  [+T12 / (2 * H[1]), 0.0, -(D[1] + T12) / (2 * H[1]), 1 / (2 * H[1])],
+  models.py:66  [0.0, 0.0, -1 / Tg[1], -1 / Tg[1]]])
+  models.py:67  Bc = np.array([[0.0, 0.0], [1 / Tg[0], 0.0],
+  models.py:68  [0.0, 0.0], [0.0, 1 / Tg[1]]])
+  models.py:70  [-1 / (2 * H[0]), 0.0, +1 / (2 * H[0]), 0.0],
+  models.py:71  [0.0, 0.0, 0.0, 0.0],
+  models.py:72  [0.0, -1 / (2 * H[1]), 0.0, +1 / (2 * H[1])],
+  models.py:73  [0.0, 0.0, 0.0, 0.0]])
+  models.py:81  H = [5.0, 4.0], D = [0.8, 0.6], Tg = [0.5, 0.4], T12 = 0.2, Ts = 0.1.
+  models.py:82  Forward-Euler discretization (unchanged method, Ts = 0.1).
+  models.py:102  R=np.diag([0.05, 0.05, 0.05]).astype(float),
+  models.py:103  d_bar=np.array([5.0, 3.0, 2.0]),
+  models.py:104  d_std=np.array([1.0, 0.6, 0.4]),
+  models.py:106  alpha=0.95, lam=5.0,
+  models.py:110  x0=np.array([0.30, 0, 0.30, 0, 0.30, 0]),
+  models.py:120  R=np.diag([0.1, 0.1]).astype(float),
+  models.py:121  d_bar=np.array([0.15, 0.10, 0.20, 0.15]),
+  models.py:122  d_std=np.sqrt(np.array([0.005, 0.003, 0.010, 0.006])),
+  models.py:124  alpha=0.95, lam=5.0,
+  models.py:128  x0=np.array([0.1, 0, 0.1, 0]),
+  models.py:140  # frequency MAE 0.028 -> 0.027 (measured 0.02746), and humanoid DRC MAE
+  models.py:141  # 0.046 -> 0.0455 (measured 0.04548). They are kept here as v1 reference only;
+  models.py:146  drc_mae=(0.046, 0.001), lqr_mae=(0.291, 0.001), advantage=84.4,
+  models.py:148  shifts=[(0.0, 0.2910, 0.0455, 84.4),
+  models.py:149  (0.5, 0.4338, 0.1689, 61.1),
+  models.py:150  (1.0, 0.5772, 0.3094, 46.4),
+  models.py:151  (2.0, 0.8644, 0.5939, 31.3),
+  models.py:152  (3.0, 1.1519, 0.8794, 23.7)],
+  models.py:154  iters=420, lam_min_P=31.78, rho_G=0.985, p_star=[-4.53, -2.86, -1.96],
+  models.py:158  lqr_pure=(0.291, 19.68, 0.028),
+  models.py:159  affine_lqr=(0.039, 19.68, 0.028),
+  models.py:160  drc_no_bias=(0.289, 10.31, 0.0165),
+  models.py:161  drc_affine=(0.046, 8.45, 0.0124),
+  models.py:164  lambda_humanoid={5: (0.0455, 41.16), 10: (0.0462, 41.38),
+  models.py:165  20: (0.0465, 41.50)},
+  models.py:168  drc_cost=(8.45, 0.01), lqr_cost=(19.68, 0.09),
+  models.py:169  drc_mae=(0.012, 0.000), lqr_mae=(0.028, 0.000),
+  models.py:171  nom_cost=(8.45, 19.68), shf_cost=(12.21, 44.20),
+  models.py:172  deg_cost=(44.5, 124.6),
+  models.py:173  nom_mae=(0.012, 0.028), shf_mae=(0.005, 0.041),
+  models.py:174  iters=92, lam_min_P=1.76, rho_G=0.826, p_star=[-3.27, -2.38],
+  models.py:175  lambda_micro={5: (0.0124, 8.45), 10: (0.0044, 5.54),
+  models.py:176  20: (0.0029, 5.19)},
+  models.py:178  mean_only_cost=(11.85, 43.90),  # DRC, LQR
+
+Result-literal count (section A): 0
+Layout-constant count (section B): 8
+Traceback (most recent call last):
+  File "/Users/shengdatang/Desktop/稿件回复/CAAI/CAAI_Revised/CAAI_Code_Verified/run_all.py", line 480, in <module>
+    main()
+    ~~~~^^
+  File "/Users/shengdatang/Desktop/稿件回复/CAAI/CAAI_Revised/CAAI_Code_Verified/run_all.py", line 469, in main
+    _append_model_v2_sections(worst_res, cert_res, matrices_res)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shengdatang/Desktop/稿件回复/CAAI/CAAI_Revised/CAAI_Code_Verified/run_all.py", line 351, in _append_model_v2_sections
+    f"λ_min(P−P0)={c['lam_min_PminusP']:.4f} "
+                   ~^^^^^^^^^^^^^^^^^^^
+KeyError: 'lam_min_PminusP'

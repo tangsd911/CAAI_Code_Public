@@ -1,0 +1,50 @@
+[humanoid] nominal DRC cost=41.16139 mae=0.04548; adversarial DRC={'mae': 0.024529003786983385, 'cost': 41.17824203019609, 'u_energy': 38.771553923068744, 'diverged': None}
+[humanoid] nominal LQR cost=370.76293 mae=0.29097; adversarial LQR={'mae': 0.29336577039286416, 'cost': 383.7507105443666, 'u_energy': 39.496809591572216, 'diverged': None}
+[microgrid] nominal DRC cost=0.48851 mae=0.00281; adversarial DRC={'mae': 0.0007954754658397234, 'cost': 0.3690468504822405, 'u_energy': 0.01601720840687899, 'diverged': None}
+[microgrid] nominal LQR cost=0.74544 mae=0.00494; adversarial LQR={'mae': None, 'cost': None, 'u_energy': None, 'diverged': 'diverged at t=157, max|x|=1.078e+05'}
+humanoid:
+  nominal:
+    drc:
+      mae: 0.04547782320411979
+      mae_std: 0.0008939829674190605
+      cost: 41.161387124411945
+      cost_std: 0.47759573773168396
+    lqr:
+      mae: 0.2909691207163633
+      mae_std: 0.0009988208651436857
+      cost: 370.7629264275883
+      cost_std: 2.568059353048531
+  adversarial:
+    drc:
+      mae: 0.024529003786983385
+      cost: 41.17824203019609
+      u_energy: 38.771553923068744
+      diverged: None
+    lqr:
+      mae: 0.29336577039286416
+      cost: 383.7507105443666
+      u_energy: 39.496809591572216
+      diverged: None
+microgrid:
+  nominal:
+    drc:
+      mae: 0.0028103992361130053
+      mae_std: 2.6433264272199128e-05
+      cost: 0.488508096130032
+      cost_std: 0.005140949606387709
+    lqr:
+      mae: 0.004938997371027456
+      mae_std: 2.969487680017408e-05
+      cost: 0.7454389991546707
+      cost_std: 0.008566564280226788
+  adversarial:
+    drc:
+      mae: 0.0007954754658397234
+      cost: 0.3690468504822405
+      u_energy: 0.01601720840687899
+      diverged: None
+    lqr:
+      mae: None
+      cost: None
+      u_energy: None
+      diverged: diverged at t=157, max|x|=1.078e+05

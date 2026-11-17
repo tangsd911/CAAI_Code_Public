@@ -1,0 +1,28 @@
+[humanoid] lam_min(PhiP)=26.758620 PhiP>0=True; lam_min(P-P0)=0.000000 P>=P0=True; alpha*rhoG^2=0.922392
+[microgrid] lam_min(PhiP)=1.566624 PhiP>0=True; lam_min(P-P0)=0.004024 P>=P0=True; alpha*rhoG^2=0.611221
+humanoid:
+  lam: 5.0
+  lam_min_PhiP: 26.75861961733888
+  PhiP_psd: True
+  lam_min_QKRK: 26.820908648130846
+  lam_max_NtN: 0.07606702756772792
+  lam_N_norm2: 0.3803351378386396
+  lam_min_PminusP0: 1.8553118058682952e-07
+  lam_max_PminusP0: 0.6943636614964098
+  lam_min_P0minusP: -0.6943636614964098
+  P_ge_P0: True
+  alpha_rhoG2: 0.9223923472580332
+  ar2_lt1: True
+microgrid:
+  lam: 5.0
+  lam_min_PhiP: 1.5666237117858528
+  PhiP_psd: True
+  lam_min_QKRK: 1.5747206756652123
+  lam_max_NtN: 433.2455761915775
+  lam_N_norm2: 2166.2278809578875
+  lam_min_PminusP0: 0.004024063763730561
+  lam_max_PminusP0: 2770.0648002614953
+  lam_min_P0minusP: -2770.0648002614953
+  P_ge_P0: True
+  alpha_rhoG2: 0.6112213864264594
+  ar2_lt1: True

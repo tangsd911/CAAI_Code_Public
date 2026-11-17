@@ -1,0 +1,14 @@
+| Scenario | Controller | Feedback | disturbance history | MAE | MAE std | discounted cost | reconstruction RMSE | rank(O_3)/nx |
+|---|---|---|---|---|---|---|---|---|
+| humanoid | DRC | full-state | nominal realization | 0.045482 | 0.000894 | 41.161535 | — | 6/6 |
+| humanoid | DRC | output-window | known | 0.045482 | 0.000894 | 41.161535 | 1.766e-16 | 6/6 |
+| humanoid | DRC | output-window | mean | 0.067302 | 0.001491 | 42.499648 | 5.136e-02 | 6/6 |
+| humanoid | LQR | full-state | nominal realization | 0.290970 | 0.000998 | 370.762660 | — | 6/6 |
+| humanoid | LQR | output-window | known | 0.290970 | 0.000998 | 370.762660 | 3.006e-15 | 6/6 |
+| microgrid | DRC | full-state | nominal realization | 0.002810 | 0.000026 | 0.488517 | — | 4/4 |
+| microgrid | DRC | output-window | known | 0.002810 | 0.000026 | 0.488517 | 7.251e-17 | 4/4 |
+| microgrid | DRC | output-window | mean | 0.003046 | 0.000025 | 1.115260 | 5.857e-02 | 4/4 |
+| microgrid | LQR | full-state | nominal realization | 0.004939 | 0.000030 | 0.745440 | — | 4/4 |
+| microgrid | LQR | output-window | known | 0.004939 | 0.000030 | 0.745440 | 6.267e-17 | 4/4 |
+
+Known-history OFB uses C, O_ell, D_ell/E_ell, delayed-state reconstruction and the full disturbance-propagation term. Mean-history OFB replaces the realized disturbance history by d_bar and is a sensitivity check. The first three steps use the known initial state as a finite warm-up.

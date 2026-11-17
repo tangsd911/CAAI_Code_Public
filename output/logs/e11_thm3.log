@@ -1,0 +1,118 @@
+humanoid:
+  stable:
+    label: humanoid
+    rho_G: 0.9853625286681004
+    rho_lt1: True
+    construction:
+      eig_C1: 1.180893760101435
+      eig_C2: 0.9999999999999956
+      feasible: True
+    sdp:
+      status: optimal
+      feasible: True
+      X: [[-3090.49638875   -81.87515382     0.             0.
+      0.             0.        ]
+ [  -81.87515382   -55.60777867     0.             0.
+      0.             0.        ]
+ [    0.             0.         -3054.18601631   -57.08735628
+      0.             0.        ]
+ [    0.             0.           -57.08735628   -38.79781011
+      0.             0.        ]
+ [    0.             0.             0.             0.
+  -3036.07208052   -44.80849162]
+ [    0.             0.             0.             0.
+    -44.80849162   -30.51628734]]
+      eig_C1: 0.2921085290940462
+      eig_C2: 0.01849240769038964
+      solver: CLARABEL
+    lyapunov_sdp:
+      status: optimal
+      feasible: True
+      solver: CLARABEL
+      eig_Pt_min: 0.29211376388620364
+      eig_res_min: 0.018492735967420362
+      rho_G: 0.9853625286681004
+    necessary_infeasible: False
+  destabilized:
+    label: humanoid-destabilized
+    rho_G: 1.02
+    rho_lt1: False
+    construction: None
+    sdp:
+      status: optimal
+      feasible: True
+      X: [[-3014.47925904  -161.36849909     0.             0.
+      0.             0.        ]
+ [ -161.36849909    35.99404062     0.             0.
+      0.             0.        ]
+ [    0.             0.         -2985.69438711  -118.45109553
+      0.             0.        ]
+ [    0.             0.          -118.45109553    43.2130602
+      0.             0.        ]
+ [    0.             0.             0.             0.
+  -2973.37774218   -89.81217045]
+ [    0.             0.             0.             0.
+    -89.81217045    42.04592601]]
+      eig_C1: 6.31921615215282
+      eig_C2: 47.73316062487179
+      solver: CLARABEL
+    lyapunov_sdp:
+      status: SCS-marginal
+      feasible: False
+      solver: SCS
+      eig_Pt_min: 5.2662740799723505e-09
+      eig_res_min: -2.834185339760327e-09
+      rho_G: 1.02
+    necessary_infeasible: True
+  rho_G: 0.9853625286681004
+microgrid:
+  stable:
+    label: microgrid
+    rho_G: 0.802116533354402
+    rho_lt1: True
+    construction:
+      eig_C1: 1.1269950974570746
+      eig_C2: 0.9999999999999619
+      feasible: True
+    sdp:
+      status: optimal
+      feasible: True
+      X: [[-7.14569421e+03 -1.05026466e+02 -1.11639481e+02 -1.87443788e+00]
+ [-1.05026466e+02 -3.37924546e+00 -1.67888674e+00 -2.77563498e-02]
+ [-1.11639481e+02 -1.67888674e+00 -6.46129172e+03 -1.01851424e+02]
+ [-1.87443788e+00 -2.77563498e-02 -1.01851424e+02 -3.27401056e+00]]
+      eig_C1: 0.0001253810596301753
+      eig_C2: 4.9027382302830665e-05
+      solver: CLARABEL
+    lyapunov_sdp:
+      status: optimal
+      feasible: True
+      solver: CLARABEL
+      eig_Pt_min: 0.00012538183007052743
+      eig_res_min: 4.902767867363313e-05
+      rho_G: 0.802116533354402
+    necessary_infeasible: False
+  destabilized:
+    label: microgrid-destabilized
+    rho_G: 1.0200000000000014
+    rho_lt1: False
+    construction: None
+    sdp:
+      status: optimal
+      feasible: True
+      X: [[-7.00813141e+03 -1.19711759e+02 -1.07945506e+02 -1.92668534e+00]
+ [-1.19711759e+02 -8.18978844e-01 -1.84732051e+00 -7.02533301e-02]
+ [-1.07945506e+02 -1.84732051e+00 -6.25810150e+03 -1.13624383e+02]
+ [-1.92668534e+00 -7.02533301e-02 -1.13624383e+02 -1.75322129e+00]]
+      eig_C1: 0.8306445260982035
+      eig_C2: 0.6489499148711656
+      solver: CLARABEL
+    lyapunov_sdp:
+      status: SCS-marginal
+      feasible: False
+      solver: SCS
+      eig_Pt_min: 1.3447288699531667e-11
+      eig_res_min: -8.560844192751522e-09
+      rho_G: 1.0200000000000014
+    necessary_infeasible: True
+  rho_G: 0.802116533354402

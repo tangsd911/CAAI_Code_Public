@@ -1,0 +1,12 @@
+[OK] exact IV humanoid: {'A': 1.1816729718833035e-13, 'B': 2.895705151589442e-16, 'E': 2.011332737713306e-14, 'N': 1.2196539061004796e-12, 'z': 2.9790409838967277e-15}
+[OK] no-probe negative result humanoid: not_identifiable
+[OK] scaling map humanoid: rho=0.999840, source=scaled_candidate_verified_on_original
+[OK] Schur boundary stop humanoid: schur_complement_boundary
+[OK] Algorithm 4 smoke humanoid: rho=0.985381
+[OK] exact IV microgrid: {'A': 2.57718256201479e-13, 'B': 4.005917009887506e-16, 'E': 2.6847568203386302e-14, 'N': 4.386697548551888e-14, 'z': 2.33150965428689e-16}
+[OK] no-probe negative result microgrid: not_identifiable
+[OK] scaling map microgrid: rho=0.982146, source=scaled_candidate_verified_on_original
+[OK] Schur boundary stop microgrid: schur_complement_boundary
+[OK] Algorithm 4 smoke microgrid: rho=0.801182
+ALL ALGORITHM-4 TESTS PASSED
+

@@ -1,0 +1,20 @@
+functions:
+  [0] collect_closed_loop
+  [1] _lstsq
+  [2] identify_closed_loop
+  [3] identify_open_loop
+  [4] lyapunov_policy_eval
+  [5] data_driven_lqr
+  [6] identification_errors
+  [7] loglog_slope
+truth_reference_locations:
+  collect_closed_loop:
+    [0] spec["A"]
+    [1] spec["B"]
+    [2] spec["E"]
+  identification_errors:
+    [0] spec["A"]
+    [1] spec["B"]
+    [2] spec["E"]
+compliant: True
+unexpected:

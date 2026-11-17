@@ -1,0 +1,5 @@
+Scenario,Method,Seeds,E non-identifiable,rank full,E first-stage F,Conclusion
+humanoid,OLS,5,5/5,1.00,—,confounded
+humanoid,"IV/2SLS, lagged only",5,5/5,1.00,0.773,not identifiable without exogenous disturbance excitation
+microgrid,OLS,5,5/5,1.00,—,confounded
+microgrid,"IV/2SLS, lagged only",5,5/5,1.00,0.736,not identifiable without exogenous disturbance excitation

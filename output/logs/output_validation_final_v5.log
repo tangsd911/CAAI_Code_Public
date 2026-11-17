@@ -1,0 +1,17 @@
+ALL OUTPUT VALIDATIONS PASSED
+ [OK] output feedback: 4/4 unknown-history rows finite, 0 divergences
+ [OK] OFB shift: 16 rows, 0 divergences
+ [OK] OFB ablation: 8 rows, 0 divergences
+ [OK] Algorithm 4: IV E/N identifiable and stable in 5/5 seeds
+ [OK] Algorithm 4 rates: four OLS/IV rows present
+ [OK] hard W2 scan: 24/24 ball-feasible, W2_max <= zeta
+ [OK] general-g W2: 200/200 support draws ball-feasible
+ [OK] nonlinear stress: 12 rows x 20 seeds, 0 divergence
+ [OK] tail stress: 20 rows x 20 seeds, 0 divergence
+ [OK] od_e5c_one_step_consistency: 2 rows
+ [OK] od_e5d_reconstruction_bound_audit: 2 rows
+ [OK] e18_covariance_only: 20 rows
+ [OK] e19_heavy_tail: 16 rows
+ [OK] e20_g_sample_size: 12 rows
+ [OK] e21_saturation: 16 rows
+ [OK] figures: both OFB PDFs present

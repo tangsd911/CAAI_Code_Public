@@ -1,0 +1,5 @@
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+# optional: required only for the Thm.3 SDP feasibility check (T4)
+cvxpy>=1.5

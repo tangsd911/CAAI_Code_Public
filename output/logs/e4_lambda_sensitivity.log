@@ -1,0 +1,101 @@
+humanoid:
+  5:
+    mae: 0.04548246375667183
+    mae_std: 0.0008938715612284911
+    cost: 41.1615348198844
+    cost_std: 0.47729389002929073
+    diag:
+      converged: True
+      rho_G: 0.9853625286681004
+      rho_lt1: True
+      H_ww_neg: True
+      H_uu_pos: True
+      H_ww_min: -4.977570842709953
+      H_uu_min: 0.07242915729004636
+  10:
+    mae: 0.04617537634920286
+    mae_std: 0.0009027274914792957
+    cost: 41.38361702928091
+    cost_std: 0.4879003077022207
+    diag:
+      converged: True
+      rho_G: 0.9853624851696654
+      rho_lt1: True
+      H_ww_neg: True
+      H_uu_pos: True
+      H_ww_min: -9.977612583886712
+      H_uu_min: 0.0723874161132874
+  20:
+    mae: 0.04653136927790772
+    mae_std: 0.0009070359885676566
+    cost: 41.49967119936081
+    cost_std: 0.49321843820883016
+    diag:
+      converged: True
+      rho_G: 0.9853624635848883
+      rho_lt1: True
+      H_ww_neg: True
+      H_uu_pos: True
+      H_ww_min: -19.977633340571114
+      H_uu_min: 0.07236665942888752
+microgrid:
+  5:
+    mae: 0.0028104163272232173
+    mae_std: 2.643709290921343e-05
+    cost: 0.488516526767659
+    cost_std: 0.0051412087500479
+    diag:
+      converged: True
+      rho_G: 0.802116533354402
+      rho_lt1: True
+      H_ww_neg: True
+      H_uu_pos: True
+      H_ww_min: -5.0
+      H_uu_min: 0.23515565648766623
+  10:
+    mae: 0.002732888892130805
+    mae_std: 2.558292403541704e-05
+    cost: 0.40346381010628984
+    cost_std: 0.004845819446836721
+    diag:
+      converged: True
+      rho_G: 0.7655308255594215
+      rho_lt1: True
+      H_ww_neg: True
+      H_uu_pos: True
+      H_ww_min: -10.0
+      H_uu_min: 0.21239521478444207
+  20:
+    mae: 0.002800311648113272
+    mae_std: 2.4340392246820952e-05
+    cost: 0.39425765241901023
+    cost_std: 0.004861256880906463
+    diag:
+      converged: True
+      rho_G: 0.7494691469844382
+      rho_lt1: True
+      H_ww_neg: True
+      H_uu_pos: True
+      H_ww_min: -20.000000000000004
+      H_uu_min: 0.2058389705214762
+microgrid_low:
+  1:
+    diag:
+      converged: False
+      rho_G: 8.698190371155224
+      rho_lt1: False
+      H_ww_neg: True
+      H_uu_pos: False
+      H_ww_min: -11.544881470340389
+      H_uu_min: -0.40055401909595195
+    status: unstable or non-converged
+  2:
+    diag:
+      converged: False
+      rho_G: 1.1706673526606037
+      rho_lt1: False
+      H_ww_neg: True
+      H_uu_pos: True
+      H_ww_min: -3.165634917101553
+      H_uu_min: 0.054270593467474426
+    status: unstable or non-converged

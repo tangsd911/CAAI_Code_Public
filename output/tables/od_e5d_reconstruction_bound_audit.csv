@@ -1,0 +1,3 @@
+Scenario,empirical C1,residual coefficient,max test ratio,violation fraction,max test overrun,calibration points,held-out points
+humanoid,1.268738e+02,1.000000e+00,0.3948,0.0000,-1.260441e+00,48,48
+microgrid,1.116026e+02,1.000000e+00,0.4360,0.0000,-1.023492e+00,48,48

@@ -1,0 +1,5 @@
+Scenario,Case,stop reason,phase-I steps,beta scale,initialization,rho identified,rho true,max delta,cond S_u,cond S_m,residual P,residual chi,residual psi,mapping residual,boundary status
+humanoid,"identified IV, normal",stationarity,0,1.0,provided_stable,9.853759e-01,9.853624e-01,6.883e-13,1.770e+00,1.003e+00,4.307e-13,4.965e-16,0.000e+00,0.000e+00,well posed
+humanoid,deliberate Schur-boundary test,schur_complement_boundary,0,1.0,provided_stable,9.853625e-01,9.853625e-01,nan,inf,inf,1.005e-12,2.220e-16,0.000e+00,—,H_uu or H_mm has the wrong definiteness
+microgrid,"identified IV, normal",stationarity,0,1.0,provided_stable,8.023500e-01,8.023267e-01,3.754e-12,1.424e+00,1.367e+00,2.575e-12,8.909e-16,1.110e-16,0.000e+00,well posed
+microgrid,deliberate Schur-boundary test,schur_complement_boundary,0,1.0,provided_stable,8.021165e-01,8.021165e-01,nan,inf,inf,6.188e-12,1.998e-15,5.551e-16,—,H_uu or H_mm has the wrong definiteness

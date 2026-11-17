@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "scenario": "humanoid",
+      "reference": [
+        0.2,
+        0.0,
+        0.3,
+        0.0,
+        0.2,
+        0.0
+      ],
+      "controller": "pure LQR",
+      "seeds": 20,
+      "deterministic steady error norm": 0.28774012202481764,
+      "MC MAE": 0.290969867329221,
+      "MC cost": 370.7626605066165,
+      "bias residual": 0.0,
+      "rho_G": 0.9853624421086357
+    },
+    {
+      "scenario": "humanoid",
+      "reference": [
+        0.2,
+        0.0,
+        0.3,
+        0.0,
+        0.2,
+        0.0
+      ],
+      "controller": "affine LQR bias",
+      "seeds": 20,
+      "deterministic steady error norm": 1.070060299010908e-11,
+      "MC MAE": 0.039043687823951886,
+      "MC cost": 39.216010073680195,
+      "bias residual": 0.0,
+      "rho_G": 0.9853624421086357
+    }
+  ],
+  "p_bias": [
+    -5.0,
+    -3.0,
+    -2.0
+  ],
+  "bias_residual": 0.0
+}

@@ -1,0 +1,6 @@
+| Quantity | measured | paper | paper rank | dev | singular values / note |
+|---|---|---|---|---|---|
+| Humanoid O_3 rank | 6 | 6 | 6 | +0 | 1.73e+00, 1.73e+00, 1.73e+00, 1.40e-02, 1.40e-02, 1.40e-02 |
+| Microgrid O_3 rank | 4 | — | — | — | 1.72e+00, 1.71e+00, 1.56e-02, 1.28e-02 |
+| Microgrid minimal observability index nu_o | 2 | — | — | — | smallest ell with full column rank |
+| Humanoid minimal observability index nu_o | 2 | — | — | — | smallest ell with full column rank |

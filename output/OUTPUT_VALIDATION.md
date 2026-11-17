@@ -1,0 +1,23 @@
+# Simulation output validation
+
+- PASS: output feedback: 4/4 unknown-history rows finite, 0 divergences
+- PASS: OFB shift: 16 rows, 0 divergences
+- PASS: OFB ablation: 8 rows, 0 divergences
+- PASS: Algorithm 4: IV E/N identifiable and post-hoc stable in 5/5 seeds
+- PASS: Algorithm 4 rates: four OLS/IV rows present
+- PASS: hard W2 scan: 24/24 ball-feasible, W2_max <= zeta
+- PASS: general-g W2: 200/200 support draws ball-feasible
+- PASS: nonlinear stress: 12 rows x 20 seeds, 0 divergence
+- PASS: tail stress: 20 rows x 20 seeds, 0 divergence
+- PASS: od_e5c_one_step_consistency: 2 rows
+- PASS: od_e5d_reconstruction_bound_audit: 2 rows
+- PASS: od_e5e_one_step_condition_scan: 2 rows
+- PASS: od_e5f_one_step_orthogonal_consistency: 2 rows
+- PASS: od_e5g_rigorous_rate_validation: 2 rows
+- PASS: e18_covariance_only: 20 rows
+- PASS: e19_heavy_tail: 16 rows
+- PASS: e20_g_sample_size: 12 rows
+- PASS: e21_saturation: 16 rows
+- PASS: figures: both OFB PDFs present
+- PASS: nonzero constant reference: bias residual zero and affine error suppressed
+- PASS: initial-gain transition: unstable start, stabilizing iterates, figure present

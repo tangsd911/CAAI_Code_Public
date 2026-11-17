@@ -1,0 +1,6 @@
+| Scenario | slope eA | slope eB | slope eE | slope eP | slope eK | slope ep |
+|---|---|---|---|---|---|---|
+| humanoid | -0.5332 | -0.4756 | -0.4968 | -0.4979 | -0.5300 | -0.5300 |
+| microgrid | -0.5204 | -0.5035 | -0.4627 | -0.5963 | -0.5990 | -0.3427 |
+
+Independent Gaussian PE design, not a closed-loop Algorithm 4 rollout. It isolates identification conditioning for one fixed-policy evaluation and one improvement.

@@ -1,0 +1,14 @@
+
+########## theory_tests ##########
+[OK] theory_tests (2.0s)
+
+########## algorithm4_tests ##########
+[OK] algorithm4_tests (1.4s)
+
+########## hardcode_scan ##########
+[OK] hardcode_scan (0.0s)
+{
+  "all_ok": true,
+  "wall_seconds": 3.3655056953430176,
+  "summary": "/private/tmp/caai_consolidated/output/FINAL_SUITE_SUMMARY.json"
+}

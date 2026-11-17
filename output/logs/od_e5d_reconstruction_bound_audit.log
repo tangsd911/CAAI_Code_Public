@@ -1,0 +1,3 @@
+reconstruction bound audit:
+humanoid {'C1': 126.87384544860471, 'C_residual': 1.0} max_ratio 0.3947718239526476 violations 0.0
+microgrid {'C1': 111.60256229618582, 'C_residual': 1.0} max_ratio 0.4360189123054132 violations 0.0

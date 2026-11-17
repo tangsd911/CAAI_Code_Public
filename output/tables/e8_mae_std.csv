@@ -1,0 +1,8 @@
+Case,MAE std,paper assertion std≲1e-4
+Microgrid nominal DRC MAE std,0.000026,≲1e-4
+Microgrid nominal LQR MAE std,0.000030,≲1e-4
+Microgrid shifted DRC MAE std,0.000029,≲1e-4
+Microgrid shifted LQR MAE std,0.000043,≲1e-4
+Microgrid lambda=5 DRC MAE std,0.000026,≲1e-4
+Microgrid lambda=10 DRC MAE std,0.000026,≲1e-4
+Microgrid lambda=20 DRC MAE std,0.000024,≲1e-4

@@ -1,0 +1,48 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 nonlinear_validation.py 2>&1 | tee output/logs/od_e8_e9_console.log",
+  "cwd": "/tmp/caai_final_nl",
+  "date_utc": "2026-11-12T15:09:16.628803Z",
+  "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+  "seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019
+  ],
+  "nonlinear_rows": 12,
+  "tail_rows": 20,
+  "post_run_checks": [
+    "theory_tests.py: ALL TESTS PASSED",
+    "scan_hardcoded.py: result-literal count A = 0",
+    "one-seed smoke test: 12 nonlinear rows, 20 tail rows"
+  ],
+  "files": {
+    "nonlinear_validation.py": "0f2d72208e64bb5e12b06e3fe2828e396006d319ce209a29830c78bd2991ed15",
+    "agent_od_experiments.py": "bd23b7808690802989bd5b008ec97d1af4d2e104df9d3a566e642b31defd43ec",
+    "new_experiments.py": "00ff69f46ada587835588d3ff3ba7b71a651300d059193d7edadbaa943784466",
+    "output/tables/od_e8_nonlinear_contact_saturation.md": "7156d9ea75d1759ffc0542f64f853f61d38afdeab16813b1caec193f32bb6c7f",
+    "output/tables/od_e8_nonlinear_contact_saturation.csv": "1ca8a2da6a5b1c06e19ac3647265eb4c008f8f6f5417a4702af331c27356f9cf",
+    "output/tables/od_e9_tail_only.md": "b0dd96a8d9b6d2cab80cc7cc6bee226132f27674939e6be97eb0554e2de223f4",
+    "output/tables/od_e9_tail_only.csv": "9c98c0df271aab41ef286a20faedab5218de720ec6588250e4ebb561daac8055",
+    "output/logs/od_e8_nonlinear_manifest.json": "91e7c942ff851b7d4e94b51fffef845dd3a15b5af452aa7fe15662a3b5b0bb9e",
+    "output/logs/od_e9_tail_only_manifest.json": "ffeb54af4e30e91c0831afb5d42c0b675c0698694ec942f4f8c42e3aaae40619",
+    "output/od_e8_nonlinear_model.md": "b4c7447115e6ebc28374e5684ab69954e5f7a4cbb959edcb3627be69d08a241b",
+    "output/od_e8_e9_summary.md": "6ebdc6f0830b9b24fad134a2c41ede0ba57df11523dbd3f7acca6234fb793b46"
+  }
+}

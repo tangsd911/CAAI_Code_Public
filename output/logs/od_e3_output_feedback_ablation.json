@@ -1,0 +1,110 @@
+{
+  "humanoid": {
+    "LQR pure": {
+      "mae_mean": 0.3149704965751147,
+      "mae_std": 0.003509251947255605,
+      "cost_mean": 388.8599612220892,
+      "cost_std": 4.963427393133657,
+      "recon_rmse_mean": 0.2122357536858463,
+      "recon_rmse_std": 0.012634503407698571,
+      "recon_max": 0.5816660807640405,
+      "observer_rho": 0.991236374847448,
+      "max_state": 24.93235395253775,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    },
+    "Affine nominal LQR": {
+      "mae_mean": 0.11806518893445106,
+      "mae_std": 0.006521470325944461,
+      "cost_mean": 56.38979029594496,
+      "cost_std": 2.07831641404017,
+      "recon_rmse_mean": 0.2122357536858464,
+      "recon_rmse_std": 0.01263450340769904,
+      "recon_max": 0.5816660807640247,
+      "observer_rho": 0.991236374847448,
+      "max_state": 25.083724310011817,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    },
+    "DRC without bias": {
+      "mae_mean": 0.31360920925234004,
+      "mae_std": 0.003545649411248431,
+      "cost_mean": 385.0415642288093,
+      "cost_std": 4.943470711547979,
+      "recon_rmse_mean": 0.21223575368584652,
+      "recon_rmse_std": 0.012634503407698375,
+      "recon_max": 0.5816660807640298,
+      "observer_rho": 0.991236374847448,
+      "max_state": 25.032924341126048,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    },
+    "Affine DRC": {
+      "mae_mean": 0.12118862706608387,
+      "mae_std": 0.0065546713128833934,
+      "cost_mean": 58.58133043437584,
+      "cost_std": 2.233365994988492,
+      "recon_rmse_mean": 0.2122357536858464,
+      "recon_rmse_std": 0.012634503407699027,
+      "recon_max": 0.5816660807640247,
+      "observer_rho": 0.991236374847448,
+      "max_state": 25.18020464434104,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    }
+  },
+  "microgrid": {
+    "LQR pure": {
+      "mae_mean": 0.0050926591051012274,
+      "mae_std": 8.783085784745125e-05,
+      "cost_mean": 0.7919249884350407,
+      "cost_std": 0.023684402128055136,
+      "recon_rmse_mean": 0.0018057676386177893,
+      "recon_rmse_std": 1.1061861093864025e-05,
+      "recon_max": 0.006325989600549839,
+      "observer_rho": 0.7975232552356171,
+      "max_state": 1.6044977943298182,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    },
+    "Affine nominal LQR": {
+      "mae_mean": 0.0050926591051012274,
+      "mae_std": 8.783085784745125e-05,
+      "cost_mean": 0.7919249884350407,
+      "cost_std": 0.023684402128055136,
+      "recon_rmse_mean": 0.0018057676386177893,
+      "recon_rmse_std": 1.1061861093864025e-05,
+      "recon_max": 0.006325989600549839,
+      "observer_rho": 0.7975232552356171,
+      "max_state": 1.6044977943298182,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    },
+    "DRC without bias": {
+      "mae_mean": 0.0038354891681893983,
+      "mae_std": 5.4494973552660374e-05,
+      "cost_mean": 0.6413370156955559,
+      "cost_std": 0.01447605020448581,
+      "recon_rmse_mean": 0.0018057676386177893,
+      "recon_rmse_std": 1.1061861093864036e-05,
+      "recon_max": 0.006325989600549838,
+      "observer_rho": 0.7975232552356171,
+      "max_state": 2.935752292900323,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    },
+    "Affine DRC": {
+      "mae_mean": 0.003175742263309473,
+      "mae_std": 3.617437410795835e-05,
+      "cost_mean": 0.5430266560471538,
+      "cost_std": 0.005514049388924604,
+      "recon_rmse_mean": 0.0018057676386177893,
+      "recon_rmse_std": 1.106186109386403e-05,
+      "recon_max": 0.00632598960054984,
+      "observer_rho": 0.7975232552356171,
+      "max_state": 3.0115579340864596,
+      "n_diverged": 0,
+      "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+    }
+  }
+}

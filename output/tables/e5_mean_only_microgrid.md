@@ -1,0 +1,8 @@
+| Case | cost (meas) | cost (paper) | dev cost | freq MAE (meas) | MAE (paper) | dev MAE | degradation % (meas) | deg % (paper) | dev deg |
+|---|---|---|---|---|---|---|---|---|---|
+| Nominal DRC | 0.489 | 0.489 | +0.000 | 0.0028 | 0.0028 | -0.0000 | — | — | — |
+| Nominal LQR | 0.745 | 0.745 | -0.000 | 0.0049 | 0.0049 | -0.0000 | — | — | — |
+| Mean-only DRC (mean x1.5, std nominal) | 0.581 | 0.581 | -0.000 | 0.0025 | — | — | — | — | — |
+| Mean-only LQR (mean x1.5, std nominal) | 1.320 | 1.32 | -0.000 | 0.0068 | — | — | — | — | — |
+| Shifted DRC (mean x1.5, std x sqrt2) | 0.914 | 0.914 | +0.000 | 0.0035 | 0.0035 | -0.0000 | 87.1 | 87.1 | +0.0 |
+| Shifted LQR (mean x1.5, std x sqrt2) | 1.606 | 1.606 | +0.000 | 0.0073 | 0.0073 | +0.0000 | 115.4 | 115.4 | -0.0 |

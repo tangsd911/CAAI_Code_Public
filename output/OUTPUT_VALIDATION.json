@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "checks": [
+    "output feedback: 4/4 unknown-history rows finite, 0 divergences",
+    "OFB shift: 16 rows, 0 divergences",
+    "OFB ablation: 8 rows, 0 divergences",
+    "Algorithm 4: IV E/N identifiable and post-hoc stable in 5/5 seeds",
+    "Algorithm 4 rates: four OLS/IV rows present",
+    "hard W2 scan: 24/24 ball-feasible, W2_max <= zeta",
+    "general-g W2: 200/200 support draws ball-feasible",
+    "nonlinear stress: 12 rows x 20 seeds, 0 divergence",
+    "tail stress: 20 rows x 20 seeds, 0 divergence",
+    "od_e5c_one_step_consistency: 2 rows",
+    "od_e5d_reconstruction_bound_audit: 2 rows",
+    "od_e5e_one_step_condition_scan: 2 rows",
+    "od_e5f_one_step_orthogonal_consistency: 2 rows",
+    "od_e5g_rigorous_rate_validation: 2 rows",
+    "e18_covariance_only: 20 rows",
+    "e19_heavy_tail: 16 rows",
+    "e20_g_sample_size: 12 rows",
+    "e21_saturation: 16 rows",
+    "figures: both OFB PDFs present",
+    "nonzero constant reference: bias residual zero and affine error suppressed",
+    "initial-gain transition: unstable start, stabilizing iterates, figure present"
+  ]
+}

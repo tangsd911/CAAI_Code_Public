@@ -1,0 +1,480 @@
+{
+  "suite": "paper theorem verification",
+  "models": {
+    "humanoid": {
+      "assumptions": [
+        {
+          "name": "stabilizability rank",
+          "passed": true,
+          "value": 6.0,
+          "tolerance": 6.0
+        },
+        {
+          "name": "observability-window rank",
+          "passed": true,
+          "value": 6.0,
+          "tolerance": 6.0
+        }
+      ],
+      "wasserstein_bellman": [
+        {
+          "name": "affine Bellman residual",
+          "passed": true,
+          "value": 4.3655745685100555e-11,
+          "tolerance": 1e-08
+        },
+        {
+          "name": "input FOC residual",
+          "passed": true,
+          "value": 1.4033812996793565e-14,
+          "tolerance": 2e-08
+        },
+        {
+          "name": "adversary FOC residual",
+          "passed": true,
+          "value": 1.5862718200929604e-14,
+          "tolerance": 2e-08
+        },
+        {
+          "name": "closed-loop G Schur",
+          "passed": true,
+          "value": 0.9853625286681004,
+          "tolerance": 1.0
+        }
+      ],
+      "positive_P": [
+        {
+          "name": "P symmetric",
+          "passed": true,
+          "value": 3.014577520672848e-14,
+          "tolerance": 1e-09
+        },
+        {
+          "name": "P Lyapunov residual",
+          "passed": true,
+          "value": 9.135190304375618e-13,
+          "tolerance": 2e-07
+        },
+        {
+          "name": "Phi_P positive",
+          "passed": true,
+          "value": 26.75861961733888,
+          "tolerance": 0.0
+        },
+        {
+          "name": "P positive",
+          "passed": true,
+          "value": 31.78477877234651,
+          "tolerance": 0.0
+        },
+        {
+          "name": "Hww negative",
+          "passed": true,
+          "value": -4.922811353520771,
+          "tolerance": 0.0
+        },
+        {
+          "name": "fixed lambda above Hww threshold",
+          "passed": true,
+          "value": 4.922811353520771,
+          "tolerance": 0.0
+        }
+      ],
+      "reconstruction_bound": [
+        {
+          "name": "exact model-based reconstruction",
+          "passed": true,
+          "value": 2.928818591588429e-14,
+          "tolerance": 1e-09
+        },
+        {
+          "name": "data-driven N^-1/2 trends",
+          "passed": true,
+          "value": -0.5025961862400629
+        },
+        {
+          "name": "data-driven slope subspace",
+          "passed": true,
+          "value": -0.613141313460259
+        },
+        {
+          "name": "data-driven slope reconstruction",
+          "passed": true,
+          "value": -0.46799443752412223
+        },
+        {
+          "name": "data-driven slope input_identity",
+          "passed": true,
+          "value": -0.46815725207788844
+        },
+        {
+          "name": "data-driven slope disturbance_identity",
+          "passed": true,
+          "value": -0.5025961862400629
+        }
+      ],
+      "scaling_lmi_sdpi": [
+        {
+          "name": "X LMI first block positive",
+          "passed": true,
+          "value": 1.180893760101435,
+          "tolerance": 0.0
+        },
+        {
+          "name": "X LMI second block positive",
+          "passed": true,
+          "value": 0.9999999999999956,
+          "tolerance": 0.0
+        },
+        {
+          "name": "direct X-SDP feasible",
+          "passed": true,
+          "value": 0.01849240769038964,
+          "tolerance": 0.0
+        },
+        {
+          "name": "pure Lyapunov SDP feasible",
+          "passed": true,
+          "value": 0.0,
+          "tolerance": 0.0
+        },
+        {
+          "name": "initial destabilizing policy",
+          "passed": true,
+          "value": 2.0305079576971075,
+          "tolerance": 1.0
+        },
+        {
+          "name": "scaled initializer returns stable original policy",
+          "passed": true,
+          "value": 0.9998404033329197,
+          "tolerance": 1.0
+        },
+        {
+          "name": "SDPI every logged iterate stable",
+          "passed": true,
+          "value": 0.9998404033329197,
+          "tolerance": 1.0
+        },
+        {
+          "name": "SDPI final fixed-point residual small",
+          "passed": true,
+          "value": 7.822265550419951e-13,
+          "tolerance": 1e-06
+        },
+        {
+          "name": "scaling initializer source",
+          "passed": true,
+          "value": "scaled_candidate_verified_on_original"
+        }
+      ],
+      "data_driven_consistency": [
+        {
+          "name": "data-driven slope diagnostics finite",
+          "passed": true,
+          "value": 0.6858891082708881
+        },
+        {
+          "name": "diagnostic slope eA",
+          "passed": true,
+          "value": -0.6858891082708881
+        },
+        {
+          "name": "diagnostic slope eB",
+          "passed": true,
+          "value": -0.43389831817363733
+        },
+        {
+          "name": "diagnostic slope eE",
+          "passed": true,
+          "value": -0.40872231100363743
+        },
+        {
+          "name": "diagnostic slope eP",
+          "passed": true,
+          "value": -0.5219275668274423
+        },
+        {
+          "name": "diagnostic slope eK",
+          "passed": true,
+          "value": -0.6539251344319754
+        },
+        {
+          "name": "diagnostic slope ep",
+          "passed": true,
+          "value": -0.3348566326959886
+        },
+        {
+          "name": "scope",
+          "passed": true,
+          "value": "consistency theorem; rates reported as diagnostics only"
+        }
+      ],
+      "rigorous_rate_validation": [
+        {
+          "name": "local-rate diagnostics finite",
+          "passed": true,
+          "value": 0.5422371253424946
+        },
+        {
+          "name": "local-rate diagnostics consistent with N^-1/2 regime",
+          "passed": true,
+          "value": -0.5422371253424946
+        },
+        {
+          "name": "local-rate slope eP",
+          "passed": true,
+          "value": -0.5037378994395614
+        },
+        {
+          "name": "local-rate slope eK",
+          "passed": true,
+          "value": -0.5422371253424946
+        },
+        {
+          "name": "local-rate slope ep",
+          "passed": true,
+          "value": -0.5342402022730101
+        }
+      ]
+    },
+    "microgrid": {
+      "assumptions": [
+        {
+          "name": "stabilizability rank",
+          "passed": true,
+          "value": 4.0,
+          "tolerance": 4.0
+        },
+        {
+          "name": "observability-window rank",
+          "passed": true,
+          "value": 4.0,
+          "tolerance": 4.0
+        }
+      ],
+      "wasserstein_bellman": [
+        {
+          "name": "affine Bellman residual",
+          "passed": true,
+          "value": 8.731149137020111e-11,
+          "tolerance": 1e-08
+        },
+        {
+          "name": "input FOC residual",
+          "passed": true,
+          "value": 1.3756308425898965e-13,
+          "tolerance": 2e-08
+        },
+        {
+          "name": "adversary FOC residual",
+          "passed": true,
+          "value": 4.275768827980918e-13,
+          "tolerance": 2e-08
+        },
+        {
+          "name": "closed-loop G Schur",
+          "passed": true,
+          "value": 0.802116533354402,
+          "tolerance": 1.0
+        }
+      ],
+      "positive_P": [
+        {
+          "name": "P symmetric",
+          "passed": true,
+          "value": 1.1546020556458904e-13,
+          "tolerance": 1e-09
+        },
+        {
+          "name": "P Lyapunov residual",
+          "passed": true,
+          "value": 1.0191534130100254e-12,
+          "tolerance": 2e-07
+        },
+        {
+          "name": "Phi_P positive",
+          "passed": true,
+          "value": 1.5666237117858566,
+          "tolerance": 0.0
+        },
+        {
+          "name": "P positive",
+          "passed": true,
+          "value": 1.756027151076012,
+          "tolerance": 0.0
+        },
+        {
+          "name": "Hww negative",
+          "passed": true,
+          "value": -2.9794103370198046,
+          "tolerance": 0.0
+        },
+        {
+          "name": "fixed lambda above Hww threshold",
+          "passed": true,
+          "value": 2.9794103370198046,
+          "tolerance": 0.0
+        }
+      ],
+      "reconstruction_bound": [
+        {
+          "name": "exact model-based reconstruction",
+          "passed": true,
+          "value": 6.650226650194185e-15,
+          "tolerance": 1e-09
+        },
+        {
+          "name": "data-driven N^-1/2 trends",
+          "passed": true,
+          "value": -0.5063615761401129
+        },
+        {
+          "name": "data-driven slope subspace",
+          "passed": true,
+          "value": -0.895218653058855
+        },
+        {
+          "name": "data-driven slope reconstruction",
+          "passed": true,
+          "value": -0.4676192028072243
+        },
+        {
+          "name": "data-driven slope input_identity",
+          "passed": true,
+          "value": -0.48434402594839343
+        },
+        {
+          "name": "data-driven slope disturbance_identity",
+          "passed": true,
+          "value": -0.5063615761401129
+        }
+      ],
+      "scaling_lmi_sdpi": [
+        {
+          "name": "X LMI first block positive",
+          "passed": true,
+          "value": 1.1269950974570746,
+          "tolerance": 0.0
+        },
+        {
+          "name": "X LMI second block positive",
+          "passed": true,
+          "value": 0.9999999999999614,
+          "tolerance": 0.0
+        },
+        {
+          "name": "direct X-SDP feasible",
+          "passed": true,
+          "value": 4.902738229900583e-05,
+          "tolerance": 0.0
+        },
+        {
+          "name": "pure Lyapunov SDP feasible",
+          "passed": true,
+          "value": 0.0,
+          "tolerance": 0.0
+        },
+        {
+          "name": "initial destabilizing policy",
+          "passed": true,
+          "value": 2.0412317606242083,
+          "tolerance": 1.0
+        },
+        {
+          "name": "scaled initializer returns stable original policy",
+          "passed": true,
+          "value": 0.9861184921041231,
+          "tolerance": 1.0
+        },
+        {
+          "name": "SDPI every logged iterate stable",
+          "passed": true,
+          "value": 0.9861184921041231,
+          "tolerance": 1.0
+        },
+        {
+          "name": "SDPI final fixed-point residual small",
+          "passed": true,
+          "value": 3.312265435883943e-12,
+          "tolerance": 1e-06
+        },
+        {
+          "name": "scaling initializer source",
+          "passed": true,
+          "value": "scaled_candidate_verified_on_original"
+        }
+      ],
+      "data_driven_consistency": [
+        {
+          "name": "data-driven slope diagnostics finite",
+          "passed": true,
+          "value": 0.6568647927742804
+        },
+        {
+          "name": "diagnostic slope eA",
+          "passed": true,
+          "value": -0.41126880374784397
+        },
+        {
+          "name": "diagnostic slope eB",
+          "passed": true,
+          "value": -0.4053696805525941
+        },
+        {
+          "name": "diagnostic slope eE",
+          "passed": true,
+          "value": -0.5093402863929982
+        },
+        {
+          "name": "diagnostic slope eP",
+          "passed": true,
+          "value": -0.6309681342909081
+        },
+        {
+          "name": "diagnostic slope eK",
+          "passed": true,
+          "value": -0.6568647927742804
+        },
+        {
+          "name": "diagnostic slope ep",
+          "passed": true,
+          "value": -0.5888990547576818
+        },
+        {
+          "name": "scope",
+          "passed": true,
+          "value": "consistency theorem; rates reported as diagnostics only"
+        }
+      ],
+      "rigorous_rate_validation": [
+        {
+          "name": "local-rate diagnostics finite",
+          "passed": true,
+          "value": 0.5069916231801176
+        },
+        {
+          "name": "local-rate diagnostics consistent with N^-1/2 regime",
+          "passed": true,
+          "value": -0.5069916231801176
+        },
+        {
+          "name": "local-rate slope eP",
+          "passed": true,
+          "value": -0.5026909967480852
+        },
+        {
+          "name": "local-rate slope eK",
+          "passed": true,
+          "value": -0.5069916231801176
+        },
+        {
+          "name": "local-rate slope ep",
+          "passed": true,
+          "value": -0.4733325748874211
+        }
+      ]
+    }
+  },
+  "all_passed": true
+}

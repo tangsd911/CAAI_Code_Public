@@ -1,0 +1,90 @@
+{
+  "humanoid": {
+    "DRC": {
+      "full": [
+        0.04548246375915889,
+        0.0008938715610821827,
+        41.16153482074441,
+        0.47729389002423106
+      ],
+      "ofb": {
+        "mae_mean": 0.12118862706608387,
+        "mae_std": 0.0065546713128833934,
+        "cost_mean": 58.58133043437584,
+        "cost_std": 2.233365994988492,
+        "recon_rmse_mean": 0.2122357536858464,
+        "recon_rmse_std": 0.012634503407699027,
+        "recon_max": 0.5816660807640247,
+        "observer_rho": 0.991236374847448,
+        "max_state": 25.18020464434104,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "LQR": {
+      "full": [
+        0.290969867329221,
+        0.0009980492072396592,
+        370.76266050661644,
+        2.5659525141661956
+      ],
+      "ofb": {
+        "mae_mean": 0.3149704965751147,
+        "mae_std": 0.003509251947255605,
+        "cost_mean": 388.8599612220892,
+        "cost_std": 4.963427393133657,
+        "recon_rmse_mean": 0.2122357536858463,
+        "recon_rmse_std": 0.012634503407698571,
+        "recon_max": 0.5816660807640405,
+        "observer_rho": 0.991236374847448,
+        "max_state": 24.93235395253775,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    }
+  },
+  "microgrid": {
+    "DRC": {
+      "full": [
+        0.0028104163272232173,
+        2.643709290921343e-05,
+        0.488516526767659,
+        0.0051412087500479
+      ],
+      "ofb": {
+        "mae_mean": 0.003175742263309473,
+        "mae_std": 3.617437410795835e-05,
+        "cost_mean": 0.5430266560471538,
+        "cost_std": 0.005514049388924604,
+        "recon_rmse_mean": 0.0018057676386177893,
+        "recon_rmse_std": 1.106186109386403e-05,
+        "recon_max": 0.00632598960054984,
+        "observer_rho": 0.7975232552356171,
+        "max_state": 3.0115579340864596,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    },
+    "LQR": {
+      "full": [
+        0.00493899996408309,
+        2.9712899198349335e-05,
+        0.7454396376891662,
+        0.008580500571020055
+      ],
+      "ofb": {
+        "mae_mean": 0.0050926591051012274,
+        "mae_std": 8.783085784745125e-05,
+        "cost_mean": 0.7919249884350407,
+        "cost_std": 0.023684402128055136,
+        "recon_rmse_mean": 0.0018057676386177893,
+        "recon_rmse_std": 1.1061861093864025e-05,
+        "recon_max": 0.006325989600549839,
+        "observer_rho": 0.7975232552356171,
+        "max_state": 1.6044977943298182,
+        "n_diverged": 0,
+        "estimator": "steady_state_kalman_filter_unknown_disturbance_history"
+      }
+    }
+  }
+}

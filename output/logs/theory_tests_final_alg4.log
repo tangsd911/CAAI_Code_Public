@@ -1,0 +1,170 @@
+T1 fixed-point residuals: humanoid
+  [OK] P Lyapunov residual: error=1.117e-12
+  [OK] chi linear residual: error=2.047e-15
+  [OK] psi formula: error=0.000e+00
+T1 fixed-point residuals: microgrid
+  [OK] P Lyapunov residual: error=1.820e-12
+  [OK] chi linear residual: error=2.265e-15
+  [OK] psi formula: error=0.000e+00
+T2 general-g equivalence: humanoid
+  [OK] g=1 bit-identical K: error=0.000e+00
+  [OK] g=1 bit-identical p: error=0.000e+00
+  [OK] g=1 bit-identical N: error=0.000e+00
+  [OK] g=1 bit-identical z: error=0.000e+00
+  [OK] g=5 vs g=1 K: error=0.000e+00
+  [OK] g=5 vs g=1 p: error=0.000e+00
+  [OK] g=5 vs g=1 N: error=0.000e+00
+  [OK] g=5 vs g=1 z: error=0.000e+00
+  [OK] psi spread constant: error=0.000e+00
+T2 general-g equivalence: microgrid
+  [OK] g=1 bit-identical K: error=0.000e+00
+  [OK] g=1 bit-identical p: error=0.000e+00
+  [OK] g=1 bit-identical N: error=0.000e+00
+  [OK] g=1 bit-identical z: error=0.000e+00
+  [OK] g=5 vs g=1 K: error=0.000e+00
+  [OK] g=5 vs g=1 p: error=9.037e-16
+  [OK] g=5 vs g=1 N: error=0.000e+00
+  [OK] g=5 vs g=1 z: error=1.279e-16
+  [OK] psi spread constant: error=0.000e+00
+T3 output reconstruction and forward propagation: humanoid
+  [OK] noiseless delayed-state reconstruction: error=6.741e-15
+  [OK] forward propagation with disturbance history: error=6.600e-15
+  [NEG] omitted disturbance-propagation error=6.155e-02
+T3 output reconstruction and forward propagation: microgrid
+  [OK] noiseless delayed-state reconstruction: error=2.445e-14
+  [OK] forward propagation with disturbance history: error=1.167e-14
+  [NEG] omitted disturbance-propagation error=1.997e-02
+T3 stage-cost time indexing
+  [OK] one-step stage cost uses current state: error=0.000e+00
+T4 output-feedback closed loop: humanoid
+  [OK] known-history OFB MAE vs full state: error=1.388e-17
+  [OK] known-history OFB cost vs full state: error=0.000e+00
+  rank(O_3)=6/6, known-history recon RMSE=1.94e-16, mean-history recon RMSE=5.04e-02
+T4 output-feedback closed loop: microgrid
+  [OK] known-history OFB MAE vs full state: error=7.806e-18
+  [OK] known-history OFB cost vs full state: error=1.110e-15
+  rank(O_3)=4/4, known-history recon RMSE=6.89e-17, mean-history recon RMSE=5.84e-02
+T4 Hessian signs: humanoid
+  H_uu min eig = 0.0724 (>0)
+  H_ww min eig = -4.9776 (<0)
+T4 Hessian signs: microgrid
+  H_uu min eig = 0.2352 (>0)
+  H_ww min eig = -5.0000 (<0)
+T1 per-support dual expansion: humanoid
+  [OK] g=1 N_0 shared: error=0.000e+00
+  [OK] g=1 per-atom z^j identity: error=0.000e+00
+  [OK] g=1 scan vs g=1 K: error=0.000e+00
+  [OK] g=1 scan vs g=1 p: error=0.000e+00
+  [OK] g=1 scan vs g=1 N: error=0.000e+00
+  [OK] g=1 scan vs g=1 z: error=0.000e+00
+  [OK] g=2 N_0 shared: error=0.000e+00
+  [OK] g=2 N_1 shared: error=0.000e+00
+  [OK] g=2 per-atom z^j identity: error=0.000e+00
+  [OK] g=2 scan vs g=1 K: error=0.000e+00
+  [OK] g=2 scan vs g=1 p: error=0.000e+00
+  [OK] g=2 scan vs g=1 N: error=0.000e+00
+  [OK] g=2 scan vs g=1 z: error=0.000e+00
+  [OK] g=5 N_0 shared: error=0.000e+00
+  [OK] g=5 N_1 shared: error=0.000e+00
+  [OK] g=5 N_2 shared: error=0.000e+00
+  [OK] g=5 N_3 shared: error=0.000e+00
+  [OK] g=5 N_4 shared: error=0.000e+00
+  [OK] g=5 per-atom z^j identity: error=0.000e+00
+  [OK] g=5 scan vs g=1 K: error=0.000e+00
+  [OK] g=5 scan vs g=1 p: error=0.000e+00
+  [OK] g=5 scan vs g=1 N: error=0.000e+00
+  [OK] g=5 scan vs g=1 z: error=0.000e+00
+  [OK] g=10 N_0 shared: error=0.000e+00
+  [OK] g=10 N_1 shared: error=0.000e+00
+  [OK] g=10 N_2 shared: error=0.000e+00
+  [OK] g=10 N_3 shared: error=0.000e+00
+  [OK] g=10 N_4 shared: error=0.000e+00
+  [OK] g=10 N_5 shared: error=0.000e+00
+  [OK] g=10 N_6 shared: error=0.000e+00
+  [OK] g=10 N_7 shared: error=0.000e+00
+  [OK] g=10 N_8 shared: error=0.000e+00
+  [OK] g=10 N_9 shared: error=0.000e+00
+  [OK] g=10 per-atom z^j identity: error=0.000e+00
+  [OK] g=10 scan vs g=1 K: error=0.000e+00
+  [OK] g=10 scan vs g=1 p: error=0.000e+00
+  [OK] g=10 scan vs g=1 N: error=0.000e+00
+  [OK] g=10 scan vs g=1 z: error=0.000e+00
+T1 per-support dual expansion: microgrid
+  [OK] g=1 N_0 shared: error=0.000e+00
+  [OK] g=1 per-atom z^j identity: error=0.000e+00
+  [OK] g=1 scan vs g=1 K: error=0.000e+00
+  [OK] g=1 scan vs g=1 p: error=0.000e+00
+  [OK] g=1 scan vs g=1 N: error=0.000e+00
+  [OK] g=1 scan vs g=1 z: error=0.000e+00
+  [OK] g=2 N_0 shared: error=0.000e+00
+  [OK] g=2 N_1 shared: error=0.000e+00
+  [OK] g=2 per-atom z^j identity: error=0.000e+00
+  [OK] g=2 scan vs g=1 K: error=0.000e+00
+  [OK] g=2 scan vs g=1 p: error=4.441e-16
+  [OK] g=2 scan vs g=1 N: error=0.000e+00
+  [OK] g=2 scan vs g=1 z: error=3.925e-17
+  [OK] g=5 N_0 shared: error=0.000e+00
+  [OK] g=5 N_1 shared: error=0.000e+00
+  [OK] g=5 N_2 shared: error=0.000e+00
+  [OK] g=5 N_3 shared: error=0.000e+00
+  [OK] g=5 N_4 shared: error=0.000e+00
+  [OK] g=5 per-atom z^j identity: error=0.000e+00
+  [OK] g=5 scan vs g=1 K: error=0.000e+00
+  [OK] g=5 scan vs g=1 p: error=2.220e-16
+  [OK] g=5 scan vs g=1 N: error=0.000e+00
+  [OK] g=5 scan vs g=1 z: error=9.739e-17
+  [OK] g=10 N_0 shared: error=0.000e+00
+  [OK] g=10 N_1 shared: error=0.000e+00
+  [OK] g=10 N_2 shared: error=0.000e+00
+  [OK] g=10 N_3 shared: error=0.000e+00
+  [OK] g=10 N_4 shared: error=0.000e+00
+  [OK] g=10 N_5 shared: error=0.000e+00
+  [OK] g=10 N_6 shared: error=0.000e+00
+  [OK] g=10 N_7 shared: error=0.000e+00
+  [OK] g=10 N_8 shared: error=0.000e+00
+  [OK] g=10 N_9 shared: error=0.000e+00
+  [OK] g=10 per-atom z^j identity: error=0.000e+00
+  [OK] g=10 scan vs g=1 K: error=0.000e+00
+  [OK] g=10 scan vs g=1 p: error=2.831e-16
+  [OK] g=10 scan vs g=1 N: error=0.000e+00
+  [OK] g=10 scan vs g=1 z: error=7.110e-17
+T2 SDPI vs naive fixed point: humanoid
+  Phase I rounds=1, switch step=0, Phase II steps=5, rho(G)=0.98536, value violations=2
+  [OK] SDPI K vs baseline: error=5.805e-14
+  [OK] SDPI p vs baseline: error=4.441e-16
+  [OK] SDPI N vs baseline: error=6.056e-16
+  [OK] SDPI z vs baseline: error=0.000e+00
+  [OK] SDPI P vs baseline: error=5.424e-12
+  initialization=scaled_candidate_verified_on_original, stop=stationarity, final deltas={'K': 6.646518689688359e-15, 'p': 9.930136612989092e-16, 'N': 1.6711069443220838e-16, 'z': 0.0}
+T2 SDPI vs naive fixed point: microgrid
+  Phase I rounds=0, switch step=0, Phase II steps=7, rho(G)=0.80212, value violations=200
+  [OK] SDPI K vs baseline: error=1.615e-12
+  [OK] SDPI p vs baseline: error=6.957e-15
+  [OK] SDPI N vs baseline: error=2.598e-13
+  [OK] SDPI z vs baseline: error=2.074e-15
+  [OK] SDPI P vs baseline: error=2.521e-11
+  initialization=provided_stable, stop=stationarity, final deltas={'K': 3.6686210394357355e-12, 'p': 1.0777694084219737e-13, 'N': 5.721642717357991e-13, 'z': 1.4632072410009546e-14}
+T2 SDPI degenerate at baseline policy: humanoid
+  [OK] degenerate K: error=5.400e-14
+  [OK] degenerate p: error=0.000e+00
+  [OK] degenerate P: error=4.775e-12
+T2 SDPI degenerate at baseline policy: microgrid
+  [OK] degenerate K: error=3.759e-12
+  [OK] degenerate p: error=1.554e-14
+  [OK] degenerate P: error=1.634e-10
+T2 SDPI arbitrary initial policy: humanoid
+  initial rho=2.0277, source=scaled_candidate_verified_on_original, final rho=0.98536
+T2 SDPI arbitrary initial policy: microgrid
+  initial rho=5.2837, source=scaled_candidate_verified_on_original, final rho=0.80212
+T3 identification rank/PE: humanoid
+  rank [X;E_e]=9/9, lambda_min Phi=3.51e-06
+T3 identification rank/PE: microgrid
+  rank [X;E_e]=6/6, lambda_min Phi=2.44e-06
+T4 Thm.3 X criterion: humanoid
+  stable rho=0.9854: construction+SDP feasible; destabilized rho=1.0200: Lyapunov SDP SCS-marginal
+T4 Thm.3 X criterion: microgrid
+  stable rho=0.8021: construction+SDP feasible; destabilized rho=1.0200: Lyapunov SDP SCS-marginal
+T5 truth-usage audit
+  truth A/B/E referenced only in: ['collect_closed_loop', 'identification_errors', 'full_identification_errors']
+
+ALL TESTS PASSED

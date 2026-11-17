@@ -1,0 +1,20 @@
+| Scenario | disturbance law | Controller | MAE | MAE std | discounted cost | cost std | valid seeds | diverged seeds |
+|---|---|---|---|---|---|---|---|---|
+| humanoid | Gaussian | DRC | 0.045303 | 0.000614 | 41.192338 | 0.322863 | 10 | 0 |
+| humanoid | Gaussian | LQR | 0.291053 | 0.000623 | 371.050985 | 1.606397 | 10 | 0 |
+| humanoid | Student-t(df=3) | DRC | 0.042105 | 0.000965 | 40.959215 | 0.427824 | 10 | 0 |
+| humanoid | Student-t(df=3) | LQR | 0.290604 | 0.000921 | 370.139249 | 2.345045 | 10 | 0 |
+| humanoid | Student-t(df=5) | DRC | 0.044297 | 0.000606 | 41.013678 | 0.324718 | 10 | 0 |
+| humanoid | Student-t(df=5) | LQR | 0.290700 | 0.000614 | 370.177726 | 1.661413 | 10 | 0 |
+| humanoid | Student-t(df=10) | DRC | 0.045065 | 0.000658 | 40.965329 | 0.456820 | 10 | 0 |
+| humanoid | Student-t(df=10) | LQR | 0.290604 | 0.000977 | 369.790772 | 2.536675 | 10 | 0 |
+| microgrid | Gaussian | DRC | 0.002811 | 0.000035 | 0.487633 | 0.006101 | 10 | 0 |
+| microgrid | Gaussian | LQR | 0.004931 | 0.000033 | 0.743598 | 0.008751 | 10 | 0 |
+| microgrid | Student-t(df=3) | DRC | 0.002672 | 0.000042 | 0.489395 | 0.021351 | 10 | 0 |
+| microgrid | Student-t(df=3) | LQR | 0.004934 | 0.000034 | 0.749161 | 0.017689 | 10 | 0 |
+| microgrid | Student-t(df=5) | DRC | 0.002805 | 0.000026 | 0.492085 | 0.008314 | 10 | 0 |
+| microgrid | Student-t(df=5) | LQR | 0.004924 | 0.000043 | 0.742237 | 0.013969 | 10 | 0 |
+| microgrid | Student-t(df=10) | DRC | 0.002809 | 0.000027 | 0.491123 | 0.005329 | 10 | 0 |
+| microgrid | Student-t(df=10) | LQR | 0.004949 | 0.000044 | 0.748312 | 0.011288 | 10 | 0 |
+
+Student-t samples are scaled by sqrt(df/(df-2)) so their covariance matches the nominal Gaussian when df>2. This is a covariance-matched tail stress test, not a Wasserstein-radius certificate.
