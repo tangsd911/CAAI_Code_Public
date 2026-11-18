@@ -122,8 +122,11 @@ offset to `1.07e-11` while the stochastic MAE drops to `0.0390`.
    humanoid OFB DRC MAE is `0.121189` versus full-state `0.045482`.
 2. Full `E,N` identification requires the designed probe `q`. Generic
    closed-loop data alone leave `E` confounded with `A+EN`.
-3. The IV fixed-policy `N` slopes are not exactly `-1/2` in every case; the
-   measured values are reported without clipping.
+3. The general Algorithm-4 diagnostic is not uniformly at `-1/2`: the IV
+   `ep` slope is `-0.397` (humanoid) and `-0.217` (microgrid), and the IV `N`
+   slopes are `-0.407` and `-0.345`. These values are reported without clipping;
+   the low-noise PE study, not the general diagnostic, is the rate validation
+   reported in the paper.
 4. The hard-Wasserstein scan is ball-feasible on sampled trajectories; it is
    not a global hard-Bellman proof. Some microgrid DRC support draws do not
    have an active boundary, so exact KKT complementarity is not claimed there.

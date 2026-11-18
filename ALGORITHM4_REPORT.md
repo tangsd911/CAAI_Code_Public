@@ -142,14 +142,16 @@ radii `0.999840` and `0.982146` from deliberately non-stabilizing initial gains.
 fixed-policy evaluation/improvement round. This is the local statistical
 statement proved in the manuscript, not a global outer-loop rate.
 
-| Scenario | Method | eA | eB | eE | eP | eK | eN policy |
-|---|---|---:|---:|---:|---:|---:|---:|
-| Humanoid | IV/2SLS | `-0.644` | `-0.495` | `-0.511` | `-0.544` | `-0.538` | `-0.501` |
-| Microgrid | IV/2SLS | `-0.507` | `-0.535` | `-0.490` | `-0.481` | `-0.498` | `-0.522` |
+| Scenario | Method | eA | eB | eE | eP | eK | ep | eN policy |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Humanoid | IV/2SLS | `-0.644` | `-0.495` | `-0.511` | `-0.544` | `-0.538` | `-0.397` | `-0.501` |
+| Microgrid | IV/2SLS | `-0.507` | `-0.535` | `-0.490` | `-0.481` | `-0.498` | `-0.217` | `-0.522` |
 
-These slopes are consistent with the expected `-1/2` order within finite-sample
-variation. Humanoid `eA=-0.644` is faster than `-1/2`; it is reported directly and
-was not constrained.
+Most identification and policy slopes are close to `-1/2`, but the affine-bias
+slope is weaker (`-0.397` humanoid and `-0.217` microgrid). This table is therefore
+a conditioning diagnostic, not a general empirical validation of Theorem 11. The
+low-noise PE study in `od_e5g_rigorous_rate_validation.md` is the rate validation
+reported in the paper.
 
 `od_e5b_adversary_block_rates.md` isolates `N,z` under a fixed model-based DRC
 policy. The IV slopes were `-0.407` for humanoid `eN` and `-0.345` for microgrid
